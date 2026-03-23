@@ -1,0 +1,212 @@
+{
+  "event_id": "20220224_RU_UA_Conflict",
+  "event_name": "俄乌冲突爆发",
+  "event_date": "2022-02-24",
+  "event_timezone": "UTC+8",
+  "location": "乌克兰",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "俄罗斯",
+    "乌克兰",
+    "美国",
+    "欧盟国家",
+    "英国"
+  ],
+  "brief_description": "俄罗斯对乌克兰发动全面军事行动，引发冷战后欧洲最严重的地缘政治危机和全球市场剧烈震荡。",
+  "pre_event_timeline": [
+    {
+      "date": "2014-02-20",
+      "event": "乌克兰亲俄总统亚努科维奇被罢免，克里米亚危机爆发，俄罗斯吞并克里米亚。"
+    },
+    {
+      "date": "2021-03-",
+      "event": "俄罗斯在俄乌边境大规模集结军队，引发国际社会对入侵的担忧。"
+    },
+    {
+      "date": "2022-02-21",
+      "event": "俄罗斯总统普京宣布承认乌克兰东部顿涅茨克和卢甘斯克两州为独立国家，并派遣“维和部队”。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2022-02-26",
+      "event": "美国、欧盟、英国等宣布将部分俄罗斯银行排除在SWIFT系统之外，并对俄罗斯央行实施制裁。"
+    },
+    {
+      "date": "2022-03-08",
+      "event": "美国宣布禁止进口俄罗斯石油、天然气和煤炭；英国宣布将在年底前逐步停止进口。"
+    },
+    {
+      "date": "2022-09-21",
+      "event": "俄罗斯宣布进行部分军事动员，冲突进一步升级。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 99.08,
+      "unit": "美元/桶",
+      "percentile_5y": 90.4,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 97.0908,
+      "unit": "",
+      "percentile_5y": 19.8,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28079.0,
+      "unit": "",
+      "percentile_5y": 60.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 87.79,
+      "unit": "",
+      "percentile_5y": 24.6,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 416022.0,
+      "unit": "",
+      "percentile_5y": 11.1,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 30.32,
+      "unit": "",
+      "percentile_5y": 95.6,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2022-02-23",
+        "close": 96.84
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2022-02-24",
+          "close": 99.08,
+          "return_pct": 2.31
+        },
+        {
+          "day": "t+1",
+          "date": "2022-02-25",
+          "close": 97.93,
+          "return_pct": 1.13
+        },
+        {
+          "day": "t+2",
+          "date": "2022-02-28",
+          "close": 100.99,
+          "return_pct": 4.29
+        },
+        {
+          "day": "t+3",
+          "date": "2022-03-01",
+          "close": 104.97,
+          "return_pct": 8.4
+        },
+        {
+          "day": "t+4",
+          "date": "2022-03-02",
+          "close": 112.93,
+          "return_pct": 16.62
+        },
+        {
+          "day": "t+5",
+          "date": "2022-03-03",
+          "close": 110.46,
+          "return_pct": 14.06
+        },
+        {
+          "day": "t+10",
+          "date": "2022-03-10",
+          "close": 109.33,
+          "return_pct": 12.9
+        },
+        {
+          "day": "t+20",
+          "date": "2022-03-24",
+          "close": 119.03,
+          "return_pct": 22.91
+        },
+        {
+          "day": "t+30",
+          "date": "2022-04-07",
+          "close": 100.58,
+          "return_pct": 3.86
+        },
+        {
+          "day": "t+60",
+          "date": "2022-05-20",
+          "close": 112.55,
+          "return_pct": 16.22
+        }
+      ],
+      "peak": {
+        "value": 127.98,
+        "day": 12,
+        "date": "2022-03-08",
+        "return_since_pre": 32.16
+      },
+      "trough": {
+        "value": 97.93,
+        "day": 1,
+        "date": "2022-02-25",
+        "return_since_pre": 1.13
+      },
+      "volatility_pre": 24.35,
+      "volatility_post": 73.41,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件爆发初期，市场因突发战争恐慌和对俄罗斯能源出口中断的极端担忧，推动原油、天然气及小麦等大宗商品价格在短期内急速飙升，创下多年或历史新高。随后，由于实际制裁留有豁免空间、市场开始计价经济衰退带来的需求破坏、以及美国释放战略储备和其他产油国增产预期等因素，价格从峰值显著回落，进入高位宽幅震荡格局。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2022-02-24",
+      "event": "俄罗斯发动全面军事入侵，全球风险资产暴跌，能源及农产品价格飙升。",
+      "impact": "上涨",
+      "magnitude": "剧烈"
+    },
+    {
+      "day": 3,
+      "date": "2022-02-26",
+      "event": "西方宣布SWIFT制裁，引发对俄罗斯能源出口中断的恐慌，油价和金价进一步冲高。",
+      "impact": "上涨",
+      "magnitude": "显著"
+    },
+    {
+      "day": 30,
+      "date": "2022-03-08",
+      "event": "美国宣布对俄能源禁运，布伦特原油价格冲上近140美元/桶的阶段性高点后，市场开始交易需求破坏和供应替代预期。",
+      "impact": "反转",
+      "magnitude": "重大"
+    }
+  ],
+  "summary": "俄乌冲突是冷战后欧洲最严重的地缘政治危机，直接引发全球能源、粮食供给冲击和通胀飙升。初期市场因恐慌和制裁预期导致能源价格暴涨，随后在制裁豁免、需求担忧及供应替代下价格高位震荡并回落，凸显了地缘风险对全球供应链的极端冲击和能源安全的重要性。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

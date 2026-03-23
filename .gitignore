@@ -12,9 +12,9 @@ dist/
 build/
 
 # 你的数据文件（重要！）
-data/*.csv
+#data/*.csv
 data/*.xlsx
-output/*.json
+#output/*.json
 output/*.xlsx
 
 # 环境变量（包含 API Key）
