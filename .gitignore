@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# 你的数据文件（重要！）
+data/*.csv
+data/*.xlsx
+output/*.json
+output/*.xlsx
+
+# 环境变量（包含 API Key）
+.env
+*.key
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
