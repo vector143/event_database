@@ -1,0 +1,199 @@
+{
+  "event_id": "19910117_GulfWar",
+  "event_name": "海湾战争爆发",
+  "event_date": "1991-01-17",
+  "event_timezone": "UTC+8",
+  "location": "科威特、伊拉克及波斯湾地区",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "美国",
+    "伊拉克",
+    "科威特",
+    "沙特阿拉伯",
+    "英国",
+    "法国",
+    "埃及",
+    "叙利亚"
+  ],
+  "brief_description": "以美国为首的多国部队对伊拉克发动军事行动，旨在解放被伊拉克入侵并占领的科威特。",
+  "pre_event_timeline": [
+    {
+      "date": "1990-08-02",
+      "event": "伊拉克入侵并占领科威特，引发国际社会强烈谴责。"
+    },
+    {
+      "date": "1990-08-06",
+      "event": "联合国安理会通过第661号决议，对伊拉克实施全面经济制裁。"
+    },
+    {
+      "date": "1991-01-15",
+      "event": "联合国安理会第678号决议设定的伊拉克从科威特撤军最后期限到期。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "1991-02-24",
+      "event": "多国部队发动代号为“沙漠军刀”的地面进攻。"
+    },
+    {
+      "date": "1991-02-28",
+      "event": "美国总统布什宣布停火，地面战事基本结束。"
+    },
+    {
+      "date": "1991-04-03",
+      "event": "联合国安理会通过第687号决议，正式确立停火条件，要求伊拉克销毁大规模杀伤性武器。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 19.7,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 83.28,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 308440.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 27.45,
+      "unit": "",
+      "percentile_5y": 91.4,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "1991-01-16",
+        "close": 30.2
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "1991-01-17",
+          "close": 19.7,
+          "return_pct": -34.77
+        },
+        {
+          "day": "t+1",
+          "date": "1991-01-18",
+          "close": 18.2,
+          "return_pct": -39.74
+        },
+        {
+          "day": "t+2",
+          "date": "1991-01-21",
+          "close": 18.97,
+          "return_pct": -37.19
+        },
+        {
+          "day": "t+3",
+          "date": "1991-01-22",
+          "close": 20.5,
+          "return_pct": -32.12
+        },
+        {
+          "day": "t+4",
+          "date": "1991-01-23",
+          "close": 20.56,
+          "return_pct": -31.92
+        },
+        {
+          "day": "t+5",
+          "date": "1991-01-24",
+          "close": 20.37,
+          "return_pct": -32.55
+        },
+        {
+          "day": "t+10",
+          "date": "1991-01-31",
+          "close": 20.06,
+          "return_pct": -33.58
+        },
+        {
+          "day": "t+20",
+          "date": "1991-02-14",
+          "close": 18.79,
+          "return_pct": -37.78
+        },
+        {
+          "day": "t+30",
+          "date": "1991-02-28",
+          "close": 18.68,
+          "return_pct": -38.15
+        },
+        {
+          "day": "t+60",
+          "date": "1991-04-15",
+          "close": 20.17,
+          "return_pct": -33.21
+        }
+      ],
+      "peak": {
+        "value": 20.81,
+        "day": 55,
+        "date": "1991-03-13",
+        "return_since_pre": -31.09
+      },
+      "trough": {
+        "value": 16.5,
+        "day": 32,
+        "date": "1991-02-18",
+        "return_since_pre": -45.36
+      },
+      "volatility_pre": 83.19,
+      "volatility_post": 64.84,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "战前因供应中断预期和恐慌情绪推动油价持续飙升；战争正式爆发后，由于军事行动进展迅速且远超预期顺利，市场对供应长期中断的担忧迅速缓解，油价在极短时间内从高点暴跌。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "1991-01-17",
+      "event": "多国部队发动大规模空袭（“沙漠风暴”行动开始）",
+      "impact": "下跌",
+      "magnitude": "大幅下跌"
+    },
+    {
+      "day": 38,
+      "date": "1991-02-24",
+      "event": "多国部队发动地面进攻，战局迅速明朗",
+      "impact": "下跌",
+      "magnitude": "加速下跌"
+    },
+    {
+      "day": 42,
+      "date": "1991-02-28",
+      "event": "美国宣布停火，战争快速结束的预期兑现",
+      "impact": "反转",
+      "magnitude": "快速修复"
+    }
+  ],
+  "summary": "海湾战争是冷战后首场高技术局部战争，由伊拉克入侵科威特引发。以美国为首的多国部队通过空中优势和精确打击迅速击溃伊军，战争进程远快于预期，导致油价在战前因供应中断恐慌而飙升，开战后因战局迅速明朗和供应担忧缓解而暴跌。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

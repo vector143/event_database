@@ -1,0 +1,205 @@
+{
+  "event_id": "20231130_OPECPlusMeetingPostponed",
+  "event_name": "OPEC+会议推迟",
+  "event_date": "2023-11-30",
+  "event_timezone": "UTC+8",
+  "location": "线上会议",
+  "event_type": "供给冲击",
+  "subtype": "减产",
+  "involved_countries": [
+    "沙特阿拉伯",
+    "俄罗斯",
+    "安哥拉",
+    "尼日利亚",
+    "阿联酋"
+  ],
+  "brief_description": "OPEC+原定会议因成员国间就减产配额存在分歧而推迟，引发市场对供应稳定性的担忧。",
+  "pre_event_timeline": [
+    {
+      "date": "2023-10-05",
+      "event": "OPEC+部长级会议决定维持现有减产政策，但市场预期未来可能深化减产。"
+    },
+    {
+      "date": "2023-11-22",
+      "event": "沙特与俄罗斯表示将延长自愿额外减产至2024年第一季度，为会议定调。"
+    },
+    {
+      "date": "2023-11-29",
+      "event": "媒体报道安哥拉、尼日利亚等国对提议的2024年减产基准线表示不满，分歧公开化。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2023-12-01",
+      "event": "OPEC+宣布将原定11月30日的会议改为线上举行，并推迟至12月4日。"
+    },
+    {
+      "date": "2023-12-04",
+      "event": "经过艰难谈判，OPEC+达成协议，部分成员国同意在2024年第一季度进行自愿额外减产。"
+    },
+    {
+      "date": "2023-12-05",
+      "event": "市场对减产的自愿性和执行力度存疑，国际油价在协议公布后不涨反跌。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 82.83,
+      "unit": "美元/桶",
+      "percentile_5y": 63.1,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 103.5064,
+      "unit": "",
+      "percentile_5y": 60.8,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 26615.0,
+      "unit": "",
+      "percentile_5y": 19.7,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 89.9,
+      "unit": "",
+      "percentile_5y": 37.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 449664.0,
+      "unit": "",
+      "percentile_5y": 78.9,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 12.92,
+      "unit": "",
+      "percentile_5y": 5.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2023-11-29",
+        "close": 83.1
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2023-11-30",
+          "close": 82.83,
+          "return_pct": -0.32
+        },
+        {
+          "day": "t+1",
+          "date": "2023-12-01",
+          "close": 78.88,
+          "return_pct": -5.08
+        },
+        {
+          "day": "t+2",
+          "date": "2023-12-04",
+          "close": 78.03,
+          "return_pct": -6.1
+        },
+        {
+          "day": "t+3",
+          "date": "2023-12-05",
+          "close": 77.2,
+          "return_pct": -7.1
+        },
+        {
+          "day": "t+4",
+          "date": "2023-12-06",
+          "close": 74.3,
+          "return_pct": -10.59
+        },
+        {
+          "day": "t+5",
+          "date": "2023-12-07",
+          "close": 74.05,
+          "return_pct": -10.89
+        },
+        {
+          "day": "t+10",
+          "date": "2023-12-14",
+          "close": 76.61,
+          "return_pct": -7.81
+        },
+        {
+          "day": "t+20",
+          "date": "2023-12-29",
+          "close": 77.04,
+          "return_pct": -7.29
+        },
+        {
+          "day": "t+30",
+          "date": "2024-01-15",
+          "close": 78.15,
+          "return_pct": -5.96
+        },
+        {
+          "day": "t+60",
+          "date": "2024-02-26",
+          "close": 82.53,
+          "return_pct": -0.69
+        }
+      ],
+      "peak": {
+        "value": 83.55,
+        "day": 57,
+        "date": "2024-01-26",
+        "return_since_pre": 0.54
+      },
+      "trough": {
+        "value": 73.24,
+        "day": 12,
+        "date": "2023-12-12",
+        "return_since_pre": -11.87
+      },
+      "volatility_pre": 38.72,
+      "volatility_post": 30.65,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "会议推迟消息引发油价短线急跌，随后在谈判预期下小幅反弹，但最终协议因力度不足且为“自愿”性质，未能扭转市场看空情绪，油价在短暂震荡后重回下跌趋势。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2023-11-30",
+      "event": "OPEC+会议意外推迟的消息公布",
+      "impact": "下跌",
+      "magnitude": "中"
+    },
+    {
+      "day": 5,
+      "date": "2023-12-04",
+      "event": "OPEC+达成新的自愿减产协议",
+      "impact": "反转",
+      "magnitude": "低"
+    }
+  ],
+  "summary": "本次事件核心是OPEC+内部围绕减产配额的分歧公开化，暴露了联盟的协调难度。在油价从高位回落的背景下，会议推迟加剧了市场对供应过剩的担忧，但最终达成的自愿减产协议因缺乏强制力而未能有效提振油价，凸显了OPEC+在平衡内部利益与市场预期上面临的挑战。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

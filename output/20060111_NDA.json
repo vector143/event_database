@@ -1,0 +1,194 @@
+{
+  "event_id": "20060111_NDA",
+  "event_name": "尼日利亚三角洲武装袭击",
+  "event_date": "2006-01-11",
+  "event_timezone": "UTC+8",
+  "location": "尼日利亚尼日尔三角洲地区",
+  "event_type": "供给冲击",
+  "subtype": "武装袭击",
+  "involved_countries": [
+    "尼日利亚"
+  ],
+  "brief_description": "尼日尔三角洲解放运动组织袭击壳牌石油设施并绑架外国工人，导致尼日利亚原油产量大幅下降。",
+  "pre_event_timeline": [
+    {
+      "date": "2004-01-01",
+      "event": "尼日尔三角洲解放运动等武装组织开始活跃，抗议石油收益分配不公及环境破坏。"
+    },
+    {
+      "date": "2005-07-01",
+      "event": "武装组织袭击频率增加，主要针对跨国石油公司的管道和设施。"
+    },
+    {
+      "date": "2005-12-20",
+      "event": "尼日利亚政府军与三角洲地区武装分子冲突升级，紧张局势加剧。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2006-01-12",
+      "event": "袭击导致壳牌关闭部分油田，尼日利亚原油日产量减少约22万桶。"
+    },
+    {
+      "date": "2006-02-18",
+      "event": "武装组织扩大袭击范围，威胁进一步破坏石油生产，国际油价持续受到支撑。"
+    },
+    {
+      "date": "2006-04-01",
+      "event": "尼日利亚政府与武装组织展开谈判，但袭击事件仍间歇性发生，供应中断风险长期化。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 62.17,
+      "unit": "美元/桶",
+      "percentile_5y": 2.4,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 88.99000000000001,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 29808.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.6,
+      "unit": "",
+      "percentile_5y": 29.5,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 302584.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 10.94,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2006-01-10",
+        "close": 61.92
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2006-01-11",
+          "close": 62.17,
+          "return_pct": 0.4
+        },
+        {
+          "day": "t+1",
+          "date": "2006-01-12",
+          "close": 62.62,
+          "return_pct": 1.13
+        },
+        {
+          "day": "t+2",
+          "date": "2006-01-13",
+          "close": 62.26,
+          "return_pct": 0.55
+        },
+        {
+          "day": "t+3",
+          "date": "2006-01-16",
+          "close": 62.93,
+          "return_pct": 1.63
+        },
+        {
+          "day": "t+4",
+          "date": "2006-01-17",
+          "close": 64.9,
+          "return_pct": 4.81
+        },
+        {
+          "day": "t+5",
+          "date": "2006-01-18",
+          "close": 64.19,
+          "return_pct": 3.67
+        },
+        {
+          "day": "t+10",
+          "date": "2006-01-25",
+          "close": 64.23,
+          "return_pct": 3.73
+        },
+        {
+          "day": "t+20",
+          "date": "2006-02-08",
+          "close": 61.06,
+          "return_pct": -1.39
+        },
+        {
+          "day": "t+30",
+          "date": "2006-02-22",
+          "close": 60.44,
+          "return_pct": -2.39
+        },
+        {
+          "day": "t+60",
+          "date": "2006-04-05",
+          "close": 67.1,
+          "return_pct": 8.37
+        }
+      ],
+      "peak": {
+        "value": 66.59,
+        "day": 19,
+        "date": "2006-01-30",
+        "return_since_pre": 7.54
+      },
+      "trough": {
+        "value": 58.15,
+        "day": 35,
+        "date": "2006-02-15",
+        "return_since_pre": -6.09
+      },
+      "volatility_pre": 28.42,
+      "volatility_post": 27.52,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件爆发后油价因供应中断担忧快速上涨，但随着市场消化信息及部分供应恢复，涨幅有所收窄，但尼日利亚供应风险溢价长期存在。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2006-01-11",
+      "event": "武装组织袭击壳牌设施并绑架工人，引发市场对尼日利亚供应中断的担忧",
+      "impact": "上涨",
+      "magnitude": "中等"
+    }
+  ],
+  "summary": "尼日尔三角洲地区因资源分配不公引发的长期武装冲突，导致该国原油供应频繁中断，成为推高国际油价的地缘政治风险因素之一，凸显了产油国国内动荡对全球能源供给的脆弱性影响。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

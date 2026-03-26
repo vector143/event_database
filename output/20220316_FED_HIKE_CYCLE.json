@@ -1,0 +1,208 @@
+{
+  "event_id": "20220316_FED_HIKE_CYCLE",
+  "event_name": "美联储开启加息周期",
+  "event_date": "2022-03-16",
+  "event_timezone": "UTC+8",
+  "location": "美国华盛顿特区",
+  "event_type": "宏观政策",
+  "subtype": "加息",
+  "involved_countries": [
+    "美国"
+  ],
+  "brief_description": "美联储宣布加息25个基点，标志着为应对高通胀而开启新一轮紧缩货币政策周期。",
+  "pre_event_timeline": [
+    {
+      "date": "2021-11-03",
+      "event": "美联储宣布开始缩减资产购买规模（Taper），为政策转向做准备。"
+    },
+    {
+      "date": "2022-01-26",
+      "event": "美联储议息会议释放强烈鹰派信号，暗示加息即将到来。"
+    },
+    {
+      "date": "2022-02-10",
+      "event": "美国1月CPI同比上涨7.5%，创40年新高，强化了美联储的加息紧迫性。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2022-05-04",
+      "event": "美联储宣布加息50个基点，并公布缩表计划，紧缩步伐加快。"
+    },
+    {
+      "date": "2022-06-15",
+      "event": "美联储激进加息75个基点，为1994年以来最大单次加息幅度。"
+    },
+    {
+      "date": "2023-07-26",
+      "event": "美联储完成本轮周期第11次加息，将联邦基金利率目标区间上调至5.25%-5.5%。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 98.02,
+      "unit": "美元/桶",
+      "percentile_5y": 90.0,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 98.3755,
+      "unit": "",
+      "percentile_5y": 27.6,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28499.0,
+      "unit": "",
+      "percentile_5y": 75.4,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 86.74,
+      "unit": "",
+      "percentile_5y": 16.4,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 415907.0,
+      "unit": "",
+      "percentile_5y": 10.3,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 26.67,
+      "unit": "",
+      "percentile_5y": 89.7,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2022-03-15",
+        "close": 99.91
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2022-03-16",
+          "close": 98.02,
+          "return_pct": -1.89
+        },
+        {
+          "day": "t+1",
+          "date": "2022-03-17",
+          "close": 106.64,
+          "return_pct": 6.74
+        },
+        {
+          "day": "t+2",
+          "date": "2022-03-18",
+          "close": 107.93,
+          "return_pct": 8.03
+        },
+        {
+          "day": "t+3",
+          "date": "2022-03-21",
+          "close": 115.62,
+          "return_pct": 15.72
+        },
+        {
+          "day": "t+4",
+          "date": "2022-03-22",
+          "close": 115.48,
+          "return_pct": 15.58
+        },
+        {
+          "day": "t+5",
+          "date": "2022-03-23",
+          "close": 121.6,
+          "return_pct": 21.71
+        },
+        {
+          "day": "t+10",
+          "date": "2022-03-30",
+          "close": 113.45,
+          "return_pct": 13.55
+        },
+        {
+          "day": "t+20",
+          "date": "2022-04-13",
+          "close": 108.78,
+          "return_pct": 8.88
+        },
+        {
+          "day": "t+30",
+          "date": "2022-04-28",
+          "close": 107.59,
+          "return_pct": 7.69
+        },
+        {
+          "day": "t+60",
+          "date": "2022-06-09",
+          "close": 123.07,
+          "return_pct": 23.18
+        }
+      ],
+      "peak": {
+        "value": 121.6,
+        "day": 7,
+        "date": "2022-03-23",
+        "return_since_pre": 21.71
+      },
+      "trough": {
+        "value": 98.02,
+        "day": 0,
+        "date": "2022-03-16",
+        "return_since_pre": -1.89
+      },
+      "volatility_pre": 56.13,
+      "volatility_post": 59.09,
+      "pattern": "震荡",
+      "pattern_interpretation": "在加息预期、实际加息行动与经济衰退担忧的反复博弈下，美元指数整体走强但过程曲折，全球股市、债市及大宗商品价格普遍经历剧烈震荡与下跌。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2022-03-16",
+      "event": "美联储宣布加息25个基点，正式开启加息周期。",
+      "impact": "上涨",
+      "magnitude": "美元指数短期走强，全球风险资产普遍承压。"
+    },
+    {
+      "day": 50,
+      "date": "2022-05-04",
+      "event": "加息幅度提升至50基点并宣布缩表，紧缩提速。",
+      "impact": "下跌",
+      "magnitude": "市场对激进紧缩的担忧加剧，全球股市和债市大幅调整。"
+    },
+    {
+      "day": 91,
+      "date": "2022-06-15",
+      "event": "加息75个基点，鹰派程度超预期。",
+      "impact": "下跌",
+      "magnitude": "引发市场对经济衰退的深度担忧，风险资产遭遇重挫。"
+    }
+  ],
+  "summary": "为应对四十年未遇的高通胀，美联储于2022年3月开启激进加息周期，导致全球流动性收紧、美元走强，引发多国货币贬值与资本市场动荡，其快速紧缩政策是引发后续区域性银行危机和全球经济放缓压力的关键因素。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

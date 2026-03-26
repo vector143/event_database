@@ -1,0 +1,203 @@
+{
+  "event_id": "20190914_HouthiAttackSaudiOil",
+  "event_name": "也门胡塞武装袭击沙特油田",
+  "event_date": "2019-09-14",
+  "event_timezone": "UTC+8",
+  "location": "沙特阿拉伯东部省布盖格（Abqaiq）和胡赖斯（Khurais）油田",
+  "event_type": "供给冲击",
+  "subtype": "战争",
+  "involved_countries": [
+    "也门",
+    "沙特阿拉伯",
+    "伊朗"
+  ],
+  "brief_description": "也门胡塞武装使用无人机和导弹袭击沙特关键石油设施，导致沙特原油日产量骤减约570万桶，引发全球油价剧烈波动。",
+  "pre_event_timeline": [
+    {
+      "date": "2015-03-26",
+      "event": "沙特阿拉伯领导多国联军介入也门内战，打击胡塞武装。"
+    },
+    {
+      "date": "2019-05-12",
+      "event": "胡塞武装首次使用无人机袭击沙特境内石油管道泵站。"
+    },
+    {
+      "date": "2019-08-17",
+      "event": "胡塞武装对沙特东部谢拜油田发动无人机袭击，造成小规模生产中断。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2019-09-16",
+      "event": "国际油价开盘暴涨，布伦特原油期货创下历史最大单日涨幅。"
+    },
+    {
+      "date": "2019-09-18",
+      "event": "沙特宣布动用石油储备维持出口，并承诺在月底前恢复大部分产能。"
+    },
+    {
+      "date": "2019-09-20",
+      "event": "美国宣布向沙特增派军事力量，并指责伊朗是袭击的幕后主使。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 60.22,
+      "unit": "美元/桶",
+      "percentile_5y": 0.3,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 98.2038,
+      "unit": "",
+      "percentile_5y": 25.9,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 29809.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 95.25,
+      "unit": "",
+      "percentile_5y": 95.1,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 417126.0,
+      "unit": "",
+      "percentile_5y": 14.2,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 13.74,
+      "unit": "",
+      "percentile_5y": 11.3,
+      "interpretation": "低位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2019-09-13",
+        "close": 60.22
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2019-09-16",
+          "close": 69.02,
+          "return_pct": 14.61
+        },
+        {
+          "day": "t+1",
+          "date": "2019-09-17",
+          "close": 64.55,
+          "return_pct": 7.19
+        },
+        {
+          "day": "t+2",
+          "date": "2019-09-18",
+          "close": 63.6,
+          "return_pct": 5.61
+        },
+        {
+          "day": "t+3",
+          "date": "2019-09-19",
+          "close": 64.4,
+          "return_pct": 6.94
+        },
+        {
+          "day": "t+4",
+          "date": "2019-09-20",
+          "close": 64.28,
+          "return_pct": 6.74
+        },
+        {
+          "day": "t+5",
+          "date": "2019-09-23",
+          "close": 64.77,
+          "return_pct": 7.56
+        },
+        {
+          "day": "t+10",
+          "date": "2019-09-30",
+          "close": 60.78,
+          "return_pct": 0.93
+        },
+        {
+          "day": "t+20",
+          "date": "2019-10-14",
+          "close": 59.35,
+          "return_pct": -1.44
+        },
+        {
+          "day": "t+30",
+          "date": "2019-10-28",
+          "close": 61.57,
+          "return_pct": 2.24
+        },
+        {
+          "day": "t+60",
+          "date": "2019-12-09",
+          "close": 64.25,
+          "return_pct": 6.69
+        }
+      ],
+      "peak": {
+        "value": 69.02,
+        "day": 2,
+        "date": "2019-09-16",
+        "return_since_pre": 14.61
+      },
+      "trough": {
+        "value": 57.69,
+        "day": 18,
+        "date": "2019-10-02",
+        "return_since_pre": -4.2
+      },
+      "volatility_pre": 34.72,
+      "volatility_post": 26.43,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件发生后油价因供应中断恐慌而急剧飙升，随后在供应恢复预期、库存释放和需求端担忧的共同作用下，涨幅被迅速回吐，形成典型的脉冲式冲击后快速修复走势。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 2,
+      "date": "2019-09-16",
+      "event": "全球市场开盘，油价暴涨近20%。",
+      "impact": "上涨",
+      "magnitude": "极高"
+    },
+    {
+      "day": 5,
+      "date": "2019-09-19",
+      "event": "沙特宣布产能恢复速度快于预期，油价开始大幅回落。",
+      "impact": "下跌",
+      "magnitude": "高"
+    }
+  ],
+  "summary": "胡塞武装对沙特核心石油设施的袭击，暴露了全球能源供应链的关键节点风险。事件导致油价短期飙升，但因沙特快速恢复产能、美国释放战略储备预期及全球需求担忧，价格迅速回落，凸显了地缘政治溢价在供应中断预期被证伪后的脆弱性。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

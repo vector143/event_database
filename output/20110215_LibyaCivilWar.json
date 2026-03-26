@@ -1,0 +1,207 @@
+{
+  "event_id": "20110215_LibyaCivilWar",
+  "event_name": "利比亚内战爆发",
+  "event_date": "2011-02-15",
+  "event_timezone": "UTC+8",
+  "location": "利比亚",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "利比亚",
+    "法国",
+    "美国",
+    "英国",
+    "意大利",
+    "卡塔尔",
+    "阿联酋"
+  ],
+  "brief_description": "利比亚民众抗议升级为武装冲突，反对派与卡扎菲政府军爆发全面内战。",
+  "pre_event_timeline": [
+    {
+      "date": "2011-01-14",
+      "event": "突尼斯总统本·阿里流亡，阿拉伯之春浪潮开始影响北非地区。"
+    },
+    {
+      "date": "2011-02-15",
+      "event": "利比亚第二大城市班加西爆发大规模反政府示威，遭到安全部队镇压。"
+    },
+    {
+      "date": "2011-02-17",
+      "event": "“愤怒日”抗议活动在全国蔓延，冲突迅速升级，反对派开始武装抵抗。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2011-03-17",
+      "event": "联合国安理会通过第1973号决议，授权在利比亚设立禁飞区。"
+    },
+    {
+      "date": "2011-03-19",
+      "event": "多国联军（法、美、英等）开始对利比亚政府军目标进行军事干预。"
+    },
+    {
+      "date": "2011-10-20",
+      "event": "卡扎菲在苏尔特被俘身亡，标志着其政权的终结。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 101.64,
+      "unit": "美元/桶",
+      "percentile_5y": 92.0,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 78.59,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 30008.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 83.93,
+      "unit": "",
+      "percentile_5y": 4.9,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 324264.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 16.37,
+      "unit": "",
+      "percentile_5y": 34.0,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2011-02-14",
+        "close": 103.08
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2011-02-15",
+          "close": 101.64,
+          "return_pct": -1.4
+        },
+        {
+          "day": "t+1",
+          "date": "2011-02-16",
+          "close": 103.78,
+          "return_pct": 0.68
+        },
+        {
+          "day": "t+2",
+          "date": "2011-02-17",
+          "close": 102.59,
+          "return_pct": -0.48
+        },
+        {
+          "day": "t+3",
+          "date": "2011-02-18",
+          "close": 102.52,
+          "return_pct": -0.54
+        },
+        {
+          "day": "t+4",
+          "date": "2011-02-21",
+          "close": 105.74,
+          "return_pct": 2.58
+        },
+        {
+          "day": "t+5",
+          "date": "2011-02-22",
+          "close": 105.78,
+          "return_pct": 2.62
+        },
+        {
+          "day": "t+10",
+          "date": "2011-03-01",
+          "close": 115.42,
+          "return_pct": 11.97
+        },
+        {
+          "day": "t+20",
+          "date": "2011-03-15",
+          "close": 108.52,
+          "return_pct": 5.28
+        },
+        {
+          "day": "t+30",
+          "date": "2011-03-29",
+          "close": 115.16,
+          "return_pct": 11.72
+        },
+        {
+          "day": "t+60",
+          "date": "2011-05-11",
+          "close": 112.57,
+          "return_pct": 9.21
+        }
+      ],
+      "peak": {
+        "value": 126.65,
+        "day": 52,
+        "date": "2011-04-08",
+        "return_since_pre": 22.87
+      },
+      "trough": {
+        "value": 101.64,
+        "day": 0,
+        "date": "2011-02-15",
+        "return_since_pre": -1.4
+      },
+      "volatility_pre": 19.52,
+      "volatility_post": 28.58,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件爆发初期，市场对供应中断的恐慌推动油价快速冲高；随着多国释放战略储备及市场逐步适应供应缺口，加之全球经济前景担忧，油价从高点回落并进入震荡。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 32,
+      "date": "2011-03-19",
+      "event": "多国联军开始军事干预，直接打击卡扎菲政府军",
+      "impact": "上涨",
+      "magnitude": "显著"
+    },
+    {
+      "day": 247,
+      "date": "2011-10-20",
+      "event": "卡扎菲身亡，反对派取得决定性胜利，内战主要战事结束",
+      "impact": "反转",
+      "magnitude": "重大"
+    }
+  ],
+  "summary": "利比亚内战是阿拉伯之春的延续，由国内长期积怨与国际干预共同引发。战争导致该国石油生产几乎中断，引发全球油价短期飙升，凸显了主要产油国地缘政治风险对能源市场的即时且剧烈的冲击。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

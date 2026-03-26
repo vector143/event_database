@@ -1,0 +1,213 @@
+{
+  "event_id": "20200130_COVID19",
+  "event_name": "新冠疫情全球大流行",
+  "event_date": "2020-01-30",
+  "event_timezone": "UTC+8",
+  "location": "全球范围",
+  "event_type": "需求冲击",
+  "subtype": "疫情",
+  "involved_countries": [
+    "中国",
+    "美国",
+    "意大利",
+    "英国",
+    "印度",
+    "巴西"
+  ],
+  "brief_description": "由新型冠状病毒引发的全球性公共卫生危机，导致大规模封锁、经济活动停滞和供应链中断。",
+  "pre_event_timeline": [
+    {
+      "date": "2019-12-01",
+      "event": "中国武汉出现首批不明原因肺炎病例"
+    },
+    {
+      "date": "2020-01-07",
+      "event": "中国疾控中心分离出新型冠状病毒"
+    },
+    {
+      "date": "2020-01-23",
+      "event": "中国武汉宣布“封城”，采取史无前例的隔离措施"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-03-11",
+      "event": "世界卫生组织正式宣布新冠疫情构成“全球大流行”"
+    },
+    {
+      "date": "2020-03-23",
+      "event": "英国宣布全国封锁，全球多国跟进采取严格限制措施"
+    },
+    {
+      "date": "2020-12-02",
+      "event": "英国率先批准并开始接种辉瑞-BioNTech新冠疫苗"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 58.29,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 97.8687,
+      "unit": "",
+      "percentile_5y": 24.1,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 29415.0,
+      "unit": "",
+      "percentile_5y": 95.1,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 92.4,
+      "unit": "",
+      "percentile_5y": 60.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 431654.0,
+      "unit": "",
+      "percentile_5y": 52.5,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 15.49,
+      "unit": "",
+      "percentile_5y": 25.3,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-01-29",
+        "close": 59.81
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-01-30",
+          "close": 58.29,
+          "return_pct": -2.54
+        },
+        {
+          "day": "t+1",
+          "date": "2020-01-31",
+          "close": 58.16,
+          "return_pct": -2.76
+        },
+        {
+          "day": "t+2",
+          "date": "2020-02-03",
+          "close": 54.45,
+          "return_pct": -8.96
+        },
+        {
+          "day": "t+3",
+          "date": "2020-02-04",
+          "close": 53.96,
+          "return_pct": -9.78
+        },
+        {
+          "day": "t+4",
+          "date": "2020-02-05",
+          "close": 55.28,
+          "return_pct": -7.57
+        },
+        {
+          "day": "t+5",
+          "date": "2020-02-06",
+          "close": 54.93,
+          "return_pct": -8.16
+        },
+        {
+          "day": "t+10",
+          "date": "2020-02-13",
+          "close": 56.34,
+          "return_pct": -5.8
+        },
+        {
+          "day": "t+20",
+          "date": "2020-02-27",
+          "close": 52.18,
+          "return_pct": -12.76
+        },
+        {
+          "day": "t+30",
+          "date": "2020-03-12",
+          "close": 33.22,
+          "return_pct": -44.46
+        },
+        {
+          "day": "t+60",
+          "date": "2020-04-24",
+          "close": 21.44,
+          "return_pct": -64.15
+        }
+      ],
+      "peak": {
+        "value": 59.31,
+        "day": 21,
+        "date": "2020-02-20",
+        "return_since_pre": -0.84
+      },
+      "trough": {
+        "value": 22.76,
+        "day": 60,
+        "date": "2020-03-30",
+        "return_since_pre": -61.95
+      },
+      "volatility_pre": 24.33,
+      "volatility_post": 94.5,
+      "pattern": "冲高回落/快速修复",
+      "pattern_interpretation": "事件初期市场恐慌导致风险资产（如股市、原油）价格断崖式下跌；随后在超常规政策刺激和疫苗研发进展的推动下，市场预期迅速逆转，价格以V型走势快速修复并创出新高。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2020-01-30",
+      "event": "世卫组织宣布新冠疫情构成“国际关注的突发公共卫生事件”，全球市场开始恐慌",
+      "impact": "下跌",
+      "magnitude": "剧烈"
+    },
+    {
+      "day": 41,
+      "date": "2020-03-11",
+      "event": "世卫组织宣布“全球大流行”，多国封锁，经济活动骤停，全球股市暴跌",
+      "impact": "下跌",
+      "magnitude": "极端"
+    },
+    {
+      "day": 307,
+      "date": "2020-11-09",
+      "event": "辉瑞宣布其疫苗有效率超90%，市场对经济复苏预期急剧升温",
+      "impact": "反转",
+      "magnitude": "显著"
+    }
+  ],
+  "summary": "新冠疫情是21世纪最严重的全球公共卫生危机，源于新型病毒传播，导致各国采取封锁措施，引发经济活动“急冻”、需求崩溃和供应链断裂，全球市场经历恐慌性暴跌后，在史无前例的货币财政刺激和疫苗进展推动下V型反弹。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

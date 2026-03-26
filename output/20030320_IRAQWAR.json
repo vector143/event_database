@@ -1,0 +1,212 @@
+{
+  "event_id": "20030320_IRAQWAR",
+  "event_name": "伊拉克战争爆发",
+  "event_date": "2003-03-20",
+  "event_timezone": "UTC+8",
+  "location": "伊拉克",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "美国",
+    "英国",
+    "伊拉克",
+    "澳大利亚",
+    "波兰"
+  ],
+  "brief_description": "以美国为首的多国联军以伊拉克藏有大规模杀伤性武器为由，发动军事入侵，推翻萨达姆政权。",
+  "pre_event_timeline": [
+    {
+      "date": "2001-09-11",
+      "event": "美国发生“9·11”恐怖袭击，美国将反恐战争矛头指向伊拉克等国。"
+    },
+    {
+      "date": "2002-01-29",
+      "event": "美国总统小布什在国情咨文中将伊拉克、伊朗和朝鲜列为“邪恶轴心”。"
+    },
+    {
+      "date": "2003-02-05",
+      "event": "美国国务卿鲍威尔在联合国安理会展示所谓伊拉克拥有大规模杀伤性武器的证据。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2003-04-09",
+      "event": "美军攻占巴格达，萨达姆政权倒台。"
+    },
+    {
+      "date": "2003-12-13",
+      "event": "萨达姆·侯赛因在其家乡提克里特附近被美军抓获。"
+    },
+    {
+      "date": "2011-12-18",
+      "event": "美军完成从伊拉克的撤军，战争正式结束。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 25.5,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 101.15,
+      "unit": "",
+      "percentile_5y": 42.8,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 27147.0,
+      "unit": "",
+      "percentile_5y": 44.3,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.2,
+      "unit": "",
+      "percentile_5y": 27.9,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 253684.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 30.44,
+      "unit": "",
+      "percentile_5y": 95.7,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2003-03-19",
+        "close": 26.75
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2003-03-20",
+          "close": 25.5,
+          "return_pct": -4.67
+        },
+        {
+          "day": "t+1",
+          "date": "2003-03-21",
+          "close": 24.35,
+          "return_pct": -8.97
+        },
+        {
+          "day": "t+2",
+          "date": "2003-03-24",
+          "close": 26.09,
+          "return_pct": -2.47
+        },
+        {
+          "day": "t+3",
+          "date": "2003-03-25",
+          "close": 24.81,
+          "return_pct": -7.25
+        },
+        {
+          "day": "t+4",
+          "date": "2003-03-26",
+          "close": 25.29,
+          "return_pct": -5.46
+        },
+        {
+          "day": "t+5",
+          "date": "2003-03-27",
+          "close": 26.82,
+          "return_pct": 0.26
+        },
+        {
+          "day": "t+10",
+          "date": "2003-04-03",
+          "close": 25.5,
+          "return_pct": -4.67
+        },
+        {
+          "day": "t+20",
+          "date": "2003-04-17",
+          "close": 25.88,
+          "return_pct": -3.25
+        },
+        {
+          "day": "t+30",
+          "date": "2003-05-06",
+          "close": 23.57,
+          "return_pct": -11.89
+        },
+        {
+          "day": "t+60",
+          "date": "2003-06-18",
+          "close": 26.26,
+          "return_pct": -1.83
+        }
+      ],
+      "peak": {
+        "value": 27.18,
+        "day": 11,
+        "date": "2003-03-31",
+        "return_since_pre": 1.61
+      },
+      "trough": {
+        "value": 23.26,
+        "day": 40,
+        "date": "2003-04-29",
+        "return_since_pre": -13.05
+      },
+      "volatility_pre": 38.54,
+      "volatility_post": 45.29,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "战争爆发初期，市场恐慌情绪导致国际油价（如布伦特原油）短期内急剧飙升；随着主要战事迅速结束，供应中断风险解除，油价快速回落并进入较长时间的震荡下行趋势。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2003-03-20",
+      "event": "战争爆发，市场担忧供应中断，油价飙升。",
+      "impact": "上涨",
+      "magnitude": "高"
+    },
+    {
+      "day": 21,
+      "date": "2003-04-09",
+      "event": "美军攻占巴格达，主要战事迅速结束，供应中断担忧缓解。",
+      "impact": "下跌",
+      "magnitude": "高"
+    },
+    {
+      "day": 30,
+      "date": "2003-04-19",
+      "event": "战后伊拉克局势持续动荡，但石油生产逐步恢复，油价进入震荡下行通道。",
+      "impact": "下跌/震荡",
+      "magnitude": "中"
+    }
+  ],
+  "summary": "以虚假情报为借口发动的伊拉克战争，初期因供应中断恐慌推高油价，但战事迅速结束及战后产量恢复导致油价冲高后持续回落，凸显地缘风险溢价具有短期性，且战争对长期油价的支撑取决于实际供应受损程度。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

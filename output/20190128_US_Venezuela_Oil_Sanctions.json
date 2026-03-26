@@ -1,0 +1,202 @@
+{
+  "event_id": "20190128_US_Venezuela_Oil_Sanctions",
+  "event_name": "美国宣布对委内瑞拉石油制裁",
+  "event_date": "2019-01-28",
+  "event_timezone": "UTC+8",
+  "location": "美国华盛顿特区",
+  "event_type": "宏观政策",
+  "subtype": "制裁",
+  "involved_countries": [
+    "美国",
+    "委内瑞拉"
+  ],
+  "brief_description": "美国宣布对委内瑞拉国家石油公司实施制裁，旨在切断马杜罗政府的主要收入来源。",
+  "pre_event_timeline": [
+    {
+      "date": "2018-05-20",
+      "event": "委内瑞拉举行总统大选，马杜罗连任，但选举被美国等多国质疑为不合法。"
+    },
+    {
+      "date": "2019-01-10",
+      "event": "马杜罗宣誓就职开始第二个总统任期，美国等国家拒绝承认其合法性。"
+    },
+    {
+      "date": "2019-01-23",
+      "event": "委内瑞拉反对派领导人瓜伊多宣布自己为“临时总统”，并立即获得美国等数十个国家承认。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2019-02-01",
+      "event": "美国财政部发布通用许可证，允许部分与委内瑞拉石油相关的交易在有限时间内继续进行。"
+    },
+    {
+      "date": "2019-04-12",
+      "event": "美国财政部将委内瑞拉央行及国有矿业公司列入制裁名单，进一步收紧金融制裁。"
+    },
+    {
+      "date": "2020-10-26",
+      "event": "美国财政部发布通用许可证，允许部分与委内瑞拉石油相关的交易在有限时间内继续进行，以应对新冠疫情。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 59.93,
+      "unit": "美元/桶",
+      "percentile_5y": 0.2,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 95.7562,
+      "unit": "",
+      "percentile_5y": 14.3,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 31591.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 95.74,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 445944.0,
+      "unit": "",
+      "percentile_5y": 75.5,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 18.87,
+      "unit": "",
+      "percentile_5y": 58.4,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2019-01-25",
+        "close": 61.64
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2019-01-28",
+          "close": 59.93,
+          "return_pct": -2.77
+        },
+        {
+          "day": "t+1",
+          "date": "2019-01-29",
+          "close": 61.32,
+          "return_pct": -0.52
+        },
+        {
+          "day": "t+2",
+          "date": "2019-01-30",
+          "close": 61.65,
+          "return_pct": 0.02
+        },
+        {
+          "day": "t+3",
+          "date": "2019-01-31",
+          "close": 61.89,
+          "return_pct": 0.41
+        },
+        {
+          "day": "t+4",
+          "date": "2019-02-01",
+          "close": 62.75,
+          "return_pct": 1.8
+        },
+        {
+          "day": "t+5",
+          "date": "2019-02-04",
+          "close": 62.51,
+          "return_pct": 1.41
+        },
+        {
+          "day": "t+10",
+          "date": "2019-02-11",
+          "close": 61.51,
+          "return_pct": -0.21
+        },
+        {
+          "day": "t+20",
+          "date": "2019-02-25",
+          "close": 64.76,
+          "return_pct": 5.06
+        },
+        {
+          "day": "t+30",
+          "date": "2019-03-11",
+          "close": 66.58,
+          "return_pct": 8.01
+        },
+        {
+          "day": "t+60",
+          "date": "2019-04-23",
+          "close": 74.51,
+          "return_pct": 20.88
+        }
+      ],
+      "peak": {
+        "value": 68.5,
+        "day": 51,
+        "date": "2019-03-20",
+        "return_since_pre": 11.13
+      },
+      "trough": {
+        "value": 59.93,
+        "day": 0,
+        "date": "2019-01-28",
+        "return_since_pre": -2.77
+      },
+      "volatility_pre": 45.93,
+      "volatility_post": 18.22,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "制裁宣布后，市场对供应中断的担忧导致国际油价（如布伦特原油）短线快速上涨；随后因制裁措施包含过渡期、其他产油国供应稳定，以及全球需求前景不明朗，油价涨势未能持续，很快回落至事件前水平附近震荡。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2019-01-28",
+      "event": "美国宣布制裁委内瑞拉国家石油公司，禁止美国实体与其交易。",
+      "impact": "上涨",
+      "magnitude": "中等"
+    },
+    {
+      "day": 3,
+      "date": "2019-01-31",
+      "event": "市场消化制裁细节及美国提供的有限豁免期，担忧情绪有所缓解。",
+      "impact": "反转",
+      "magnitude": "轻微"
+    }
+  ],
+  "summary": "美国为施压马杜罗政府、支持反对派瓜伊多，对委内瑞拉核心经济命脉石油产业实施制裁。此举短期内推高了油价，但因制裁留有缓冲期且全球供应充足，油价冲击有限，凸显了地缘政治风险与市场实际供需的复杂互动。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "event_id": "20200308_SR_OilPriceWar",
+  "event_name": "沙特俄罗斯石油价格战",
+  "event_date": "2020-03-08",
+  "event_timezone": "UTC+8",
+  "location": "全球石油市场",
+  "event_type": "供给冲击",
+  "subtype": "增产",
+  "involved_countries": [
+    "沙特阿拉伯",
+    "俄罗斯"
+  ],
+  "brief_description": "沙特与俄罗斯未能就减产达成协议，沙特宣布大幅增产并降价，引发全球油价暴跌。",
+  "pre_event_timeline": [
+    {
+      "date": "2016-12-10",
+      "event": "OPEC与以俄罗斯为首的非OPEC产油国达成联合减产协议，形成OPEC+联盟。"
+    },
+    {
+      "date": "2020-01-01",
+      "event": "OPEC+开始执行新一轮深化减产协议，以支撑因全球经济放缓而疲软的油价。"
+    },
+    {
+      "date": "2020-03-06",
+      "event": "在维也纳举行的OPEC+会议上，俄罗斯拒绝支持OPEC提出的进一步深化减产提议。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-03-09",
+      "event": "国际油价单日暴跌超20%，创1991年海湾战争以来最大单日跌幅，引发全球金融市场巨震。"
+    },
+    {
+      "date": "2020-04-12",
+      "event": "经过多轮谈判，OPEC+最终达成史上最大规模（970万桶/日）的联合减产协议。"
+    },
+    {
+      "date": "2020-04-20",
+      "event": "美国WTI原油期货5月合约历史上首次跌至负值，收于-37.63美元/桶，反映供需严重失衡和储油空间枯竭。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 45.27,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 96.1128,
+      "unit": "",
+      "percentile_5y": 16.3,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 27813.0,
+      "unit": "",
+      "percentile_5y": 55.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.11,
+      "unit": "",
+      "percentile_5y": 27.9,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 451783.0,
+      "unit": "",
+      "percentile_5y": 79.7,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 41.94,
+      "unit": "",
+      "percentile_5y": 99.8,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-03-06",
+        "close": 45.27
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-03-09",
+          "close": 34.36,
+          "return_pct": -24.1
+        },
+        {
+          "day": "t+1",
+          "date": "2020-03-10",
+          "close": 37.22,
+          "return_pct": -17.78
+        },
+        {
+          "day": "t+2",
+          "date": "2020-03-11",
+          "close": 35.79,
+          "return_pct": -20.94
+        },
+        {
+          "day": "t+3",
+          "date": "2020-03-12",
+          "close": 33.22,
+          "return_pct": -26.62
+        },
+        {
+          "day": "t+4",
+          "date": "2020-03-13",
+          "close": 33.85,
+          "return_pct": -25.23
+        },
+        {
+          "day": "t+5",
+          "date": "2020-03-16",
+          "close": 30.05,
+          "return_pct": -33.62
+        },
+        {
+          "day": "t+10",
+          "date": "2020-03-23",
+          "close": 27.03,
+          "return_pct": -40.29
+        },
+        {
+          "day": "t+20",
+          "date": "2020-04-06",
+          "close": 33.17,
+          "return_pct": -26.73
+        },
+        {
+          "day": "t+30",
+          "date": "2020-04-21",
+          "close": 19.33,
+          "return_pct": -57.3
+        },
+        {
+          "day": "t+60",
+          "date": "2020-06-02",
+          "close": 39.57,
+          "return_pct": -12.59
+        }
+      ],
+      "peak": {
+        "value": 37.22,
+        "day": 2,
+        "date": "2020-03-10",
+        "return_since_pre": -17.78
+      },
+      "trough": {
+        "value": 19.33,
+        "day": 44,
+        "date": "2020-04-21",
+        "return_since_pre": -57.3
+      },
+      "volatility_pre": 37.17,
+      "volatility_post": 134.38,
+      "pattern": "快速修复",
+      "pattern_interpretation": "事件初期油价断崖式下跌，但在达成新减产协议后，市场恐慌情绪缓解，油价进入震荡修复通道，但受制于疫情导致的持续需求疲软，修复过程漫长且反复。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2020-03-08",
+      "event": "沙特宣布大幅下调官方售价并计划增产至创纪录水平，价格战正式爆发。",
+      "impact": "下跌",
+      "magnitude": "极端"
+    },
+    {
+      "day": 35,
+      "date": "2020-04-12",
+      "event": "OPEC+达成历史性减产协议，标志着价格战在外部压力下走向缓和。",
+      "impact": "反转",
+      "magnitude": "重大"
+    }
+  ],
+  "summary": "因俄罗斯拒绝配合深化减产，沙特发动价格战，导致油价在新冠疫情冲击需求的背景下雪崩式下跌，最终在各方压力下达成史上最大减产协议，凸显了OPEC+内部协调的脆弱性与供给冲击的破坏力。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

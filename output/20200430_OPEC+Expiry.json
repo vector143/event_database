@@ -1,0 +1,210 @@
+{
+  "event_id": "20200430_OPEC+Expiry",
+  "event_name": "OPEC+减产协议到期",
+  "event_date": "2020-04-30",
+  "event_timezone": "UTC+8",
+  "location": "线上会议（原定于奥地利维也纳）",
+  "event_type": "供给冲击",
+  "subtype": "减产",
+  "involved_countries": [
+    "沙特阿拉伯",
+    "俄罗斯",
+    "美国"
+  ],
+  "brief_description": "OPEC+史上最大规模减产协议于2020年4月30日到期，导致市场面临供应激增和需求崩溃的双重压力。",
+  "pre_event_timeline": [
+    {
+      "date": "2020-03-06",
+      "event": "OPEC+维也纳会议谈判破裂，俄罗斯拒绝进一步减产提议。"
+    },
+    {
+      "date": "2020-03-08",
+      "event": "沙特宣布大幅下调官方售价并计划增产，打响价格战。"
+    },
+    {
+      "date": "2020-04-12",
+      "event": "经过多轮紧急外交斡旋，OPEC+达成史上最大规模减产协议，但协议5月1日才生效。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-05-01",
+      "event": "新的OPEC+减产协议（首阶段减产970万桶/日）正式生效，开始执行。"
+    },
+    {
+      "date": "2020-06-06",
+      "event": "OPEC+同意将首阶段减产延长一个月至7月底，以加速市场再平衡。"
+    },
+    {
+      "date": "2020-08-01",
+      "event": "OPEC+进入减产协议第二阶段，减产规模下调至770万桶/日。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 25.27,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 99.0167,
+      "unit": "",
+      "percentile_5y": 32.7,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 30495.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 69.8,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 527631.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 34.15,
+      "unit": "",
+      "percentile_5y": 99.3,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-04-29",
+        "close": 22.54
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-04-30",
+          "close": 25.27,
+          "return_pct": 12.11
+        },
+        {
+          "day": "t+1",
+          "date": "2020-05-01",
+          "close": 26.44,
+          "return_pct": 17.3
+        },
+        {
+          "day": "t+2",
+          "date": "2020-05-04",
+          "close": 27.2,
+          "return_pct": 20.67
+        },
+        {
+          "day": "t+3",
+          "date": "2020-05-05",
+          "close": 30.97,
+          "return_pct": 37.4
+        },
+        {
+          "day": "t+4",
+          "date": "2020-05-06",
+          "close": 29.72,
+          "return_pct": 31.85
+        },
+        {
+          "day": "t+5",
+          "date": "2020-05-07",
+          "close": 29.46,
+          "return_pct": 30.7
+        },
+        {
+          "day": "t+10",
+          "date": "2020-05-14",
+          "close": 31.13,
+          "return_pct": 38.11
+        },
+        {
+          "day": "t+20",
+          "date": "2020-05-28",
+          "close": 35.29,
+          "return_pct": 56.57
+        },
+        {
+          "day": "t+30",
+          "date": "2020-06-11",
+          "close": 38.55,
+          "return_pct": 71.03
+        },
+        {
+          "day": "t+60",
+          "date": "2020-07-23",
+          "close": 43.31,
+          "return_pct": 92.15
+        }
+      ],
+      "peak": {
+        "value": 43.08,
+        "day": 53,
+        "date": "2020-06-22",
+        "return_since_pre": 91.13
+      },
+      "trough": {
+        "value": 25.27,
+        "day": 0,
+        "date": "2020-04-30",
+        "return_since_pre": 12.11
+      },
+      "volatility_pre": 140.25,
+      "volatility_post": 62.36,
+      "pattern": "冲高回落/快速修复",
+      "pattern_interpretation": "协议破裂后油价暴跌（WTI一度跌至负值），新协议达成预期推动市场从极端低位快速反弹，但在协议正式生效前，市场情绪因到期日临近而持续震荡。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": -54,
+      "date": "2020-03-06",
+      "event": "OPEC+谈判破裂，沙特与俄罗斯价格战开启",
+      "impact": "下跌",
+      "magnitude": "极端"
+    },
+    {
+      "day": -18,
+      "date": "2020-04-12",
+      "event": "达成历史性减产协议，但市场焦点仍在到期日的供应缺口",
+      "impact": "反转",
+      "magnitude": "重大"
+    },
+    {
+      "day": 1,
+      "date": "2020-05-01",
+      "event": "新减产协议生效，供应端开始实质性收缩",
+      "impact": "上涨",
+      "magnitude": "显著"
+    }
+  ],
+  "summary": "在新冠疫情导致需求崩溃的背景下，旧减产协议到期与新协议生效之间存在时间差，加剧了市场对短期供应过剩的恐慌，导致油价在3-4月经历历史性暴跌；事件凸显了OPEC+在危机中的协调作用及协议执行时机对市场的关键影响。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

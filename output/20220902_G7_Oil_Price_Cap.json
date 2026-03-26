@@ -1,0 +1,201 @@
+{
+  "event_id": "20220902_G7_Oil_Price_Cap",
+  "event_name": "G7宣布对俄罗斯石油限价",
+  "event_date": "2022-09-02",
+  "event_timezone": "UTC+8",
+  "location": "线上会议",
+  "event_type": "宏观政策",
+  "subtype": "制裁",
+  "involved_countries": [
+    "美国",
+    "英国",
+    "加拿大",
+    "法国",
+    "德国",
+    "意大利",
+    "日本",
+    "俄罗斯"
+  ],
+  "brief_description": "七国集团（G7）财长发表联合声明，同意对俄罗斯石油实施价格上限机制。",
+  "pre_event_timeline": [
+    {
+      "date": "2022-02-24",
+      "event": "俄罗斯对乌克兰发起特别军事行动，引发西方大规模制裁。"
+    },
+    {
+      "date": "2022-06-01",
+      "event": "欧盟宣布第六轮对俄制裁，决定分阶段禁止海运进口俄罗斯石油。"
+    },
+    {
+      "date": "2022-06-26",
+      "event": "G7峰会上，各国领导人首次就探讨对俄罗斯石油设定价格上限达成原则性共识。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2022-12-05",
+      "event": "欧盟、G7及澳大利亚正式实施对俄罗斯海运原油的价格上限，设定为每桶60美元。"
+    },
+    {
+      "date": "2023-02-05",
+      "event": "欧盟、G7及澳大利亚对俄罗斯精炼石油产品实施价格上限。"
+    },
+    {
+      "date": "2023-07-03",
+      "event": "印度表示其炼油厂已停止使用西方货币支付受限的俄罗斯原油，显示限价机制执行面临挑战。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 93.02,
+      "unit": "美元/桶",
+      "percentile_5y": 85.3,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 109.6121,
+      "unit": "",
+      "percentile_5y": 96.3,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 29653.0,
+      "unit": "",
+      "percentile_5y": 96.7,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 93.32,
+      "unit": "",
+      "percentile_5y": 77.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 427191.0,
+      "unit": "",
+      "percentile_5y": 44.4,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 25.47,
+      "unit": "",
+      "percentile_5y": 86.9,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2022-09-01",
+        "close": 92.36
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2022-09-02",
+          "close": 93.02,
+          "return_pct": 0.71
+        },
+        {
+          "day": "t+1",
+          "date": "2022-09-05",
+          "close": 95.74,
+          "return_pct": 3.66
+        },
+        {
+          "day": "t+2",
+          "date": "2022-09-06",
+          "close": 92.83,
+          "return_pct": 0.51
+        },
+        {
+          "day": "t+3",
+          "date": "2022-09-07",
+          "close": 88.0,
+          "return_pct": -4.72
+        },
+        {
+          "day": "t+4",
+          "date": "2022-09-08",
+          "close": 89.15,
+          "return_pct": -3.48
+        },
+        {
+          "day": "t+5",
+          "date": "2022-09-09",
+          "close": 92.84,
+          "return_pct": 0.52
+        },
+        {
+          "day": "t+10",
+          "date": "2022-09-16",
+          "close": 91.35,
+          "return_pct": -1.09
+        },
+        {
+          "day": "t+20",
+          "date": "2022-09-30",
+          "close": 87.96,
+          "return_pct": -4.76
+        },
+        {
+          "day": "t+30",
+          "date": "2022-10-14",
+          "close": 91.63,
+          "return_pct": -0.79
+        },
+        {
+          "day": "t+60",
+          "date": "2022-11-25",
+          "close": 83.63,
+          "return_pct": -9.45
+        }
+      ],
+      "peak": {
+        "value": 97.92,
+        "day": 35,
+        "date": "2022-10-07",
+        "return_since_pre": 6.02
+      },
+      "trough": {
+        "value": 84.06,
+        "day": 24,
+        "date": "2022-09-26",
+        "return_since_pre": -8.99
+      },
+      "volatility_pre": 52.24,
+      "volatility_post": 35.87,
+      "pattern": "震荡",
+      "pattern_interpretation": "事件宣布前后，市场在制裁导致的供应担忧与全球经济衰退引发的需求忧虑之间反复权衡，油价未形成单边趋势，呈现高位宽幅震荡格局。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 94,
+      "date": "2022-12-05",
+      "event": "价格上限机制正式生效，俄罗斯宣布不会向实施限价的国家出口石油。",
+      "impact": "震荡",
+      "magnitude": "中等"
+    }
+  ],
+  "summary": "为削减俄战争资金并稳定全球油价，G7在俄乌冲突后推出对俄石油限价机制。该政策导致全球石油贸易流重塑，俄罗斯石油折价出口亚洲，国际油价在制裁预期与供需博弈中宽幅震荡。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

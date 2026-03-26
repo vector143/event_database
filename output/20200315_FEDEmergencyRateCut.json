@@ -1,0 +1,201 @@
+{
+  "event_id": "20200315_FEDEmergencyRateCut",
+  "event_name": "美联储紧急降息",
+  "event_date": "2020-03-15",
+  "event_timezone": "UTC+8",
+  "location": "美国华盛顿特区",
+  "event_type": "宏观政策",
+  "subtype": "降息",
+  "involved_countries": [
+    "美国"
+  ],
+  "brief_description": "美联储在常规会议之外紧急宣布将联邦基金利率目标区间大幅下调至0-0.25%，并启动大规模量化宽松，以应对新冠疫情引发的市场恐慌和经济衰退风险。",
+  "pre_event_timeline": [
+    {
+      "date": "2020-01-30",
+      "event": "世界卫生组织宣布新冠疫情构成“国际关注的突发公共卫生事件”，全球金融市场开始出现波动。"
+    },
+    {
+      "date": "2020-03-03",
+      "event": "美联储在非例行会议期间紧急降息50个基点，为2008年金融危机以来首次紧急降息。"
+    },
+    {
+      "date": "2020-03-11",
+      "event": "世界卫生组织宣布新冠疫情为“全球大流行”，美股触发熔断，市场恐慌情绪急剧升温。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-03-23",
+      "event": "美联储宣布开启无限量量化宽松（QE），承诺无限制购买国债和抵押贷款支持证券。"
+    },
+    {
+      "date": "2020-03-27",
+      "event": "美国总统特朗普签署了总额约2.2万亿美元的《冠状病毒援助、救济和经济安全法案》。"
+    },
+    {
+      "date": "2020-04-09",
+      "event": "美联储宣布提供高达2.3万亿美元的贷款以支持经济，涵盖中小企业、州和地方政府。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 33.85,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 98.4888,
+      "unit": "",
+      "percentile_5y": 28.4,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 27813.0,
+      "unit": "",
+      "percentile_5y": 55.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.11,
+      "unit": "",
+      "percentile_5y": 27.9,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 453737.0,
+      "unit": "",
+      "percentile_5y": 81.6,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 57.83,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-03-13",
+        "close": 33.85
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-03-16",
+          "close": 30.05,
+          "return_pct": -11.23
+        },
+        {
+          "day": "t+1",
+          "date": "2020-03-17",
+          "close": 28.73,
+          "return_pct": -15.13
+        },
+        {
+          "day": "t+2",
+          "date": "2020-03-18",
+          "close": 24.88,
+          "return_pct": -26.5
+        },
+        {
+          "day": "t+3",
+          "date": "2020-03-19",
+          "close": 28.47,
+          "return_pct": -15.89
+        },
+        {
+          "day": "t+4",
+          "date": "2020-03-20",
+          "close": 26.98,
+          "return_pct": -20.3
+        },
+        {
+          "day": "t+5",
+          "date": "2020-03-23",
+          "close": 27.03,
+          "return_pct": -20.15
+        },
+        {
+          "day": "t+10",
+          "date": "2020-03-30",
+          "close": 22.76,
+          "return_pct": -32.76
+        },
+        {
+          "day": "t+20",
+          "date": "2020-04-14",
+          "close": 29.6,
+          "return_pct": -12.56
+        },
+        {
+          "day": "t+30",
+          "date": "2020-04-28",
+          "close": 20.46,
+          "return_pct": -39.56
+        },
+        {
+          "day": "t+60",
+          "date": "2020-06-09",
+          "close": 41.18,
+          "return_pct": 21.65
+        }
+      ],
+      "peak": {
+        "value": 34.11,
+        "day": 19,
+        "date": "2020-04-03",
+        "return_since_pre": 0.77
+      },
+      "trough": {
+        "value": 19.33,
+        "day": 37,
+        "date": "2020-04-21",
+        "return_since_pre": -42.9
+      },
+      "volatility_pre": 74.02,
+      "volatility_post": 130.32,
+      "pattern": "冲高回落/快速修复",
+      "pattern_interpretation": "事件宣布初期因市场解读为“政策弹药耗尽”的恐慌信号，导致风险资产（如美股）进一步暴跌；但在后续更强力、更明确的“无限量QE”政策出台后，市场流动性预期彻底扭转，风险资产开启V型快速反弹与修复。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2020-03-15",
+      "event": "美联储紧急降息至零利率并启动QE，但市场解读为恐慌信号，股指期货暴跌触发熔断。",
+      "impact": "下跌",
+      "magnitude": "剧烈"
+    },
+    {
+      "day": 8,
+      "date": "2020-03-23",
+      "event": "美联储宣布“无限量QE”，市场流动性恐慌得到根本性缓解，风险资产开始筑底。",
+      "impact": "反转",
+      "magnitude": "重大"
+    }
+  ],
+  "summary": "在新冠疫情引发全球市场恐慌性抛售的背景下，美联储采取史上最激进的紧急货币宽松组合拳（零利率+大规模QE），初期加剧市场恐慌，但后续无限量QE承诺最终稳定了金融市场，为经济复苏提供了关键流动性支持。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

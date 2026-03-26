@@ -1,0 +1,196 @@
+{
+  "event_id": "20200420_USSOB",
+  "event_name": "美国页岩油破产潮",
+  "event_date": "2020-04-20",
+  "event_timezone": "UTC+8",
+  "location": "美国，德克萨斯州等页岩油产区",
+  "event_type": "供给冲击",
+  "subtype": "价格战",
+  "involved_countries": [
+    "美国",
+    "沙特阿拉伯",
+    "俄罗斯"
+  ],
+  "brief_description": "国际油价暴跌引发美国大量高负债页岩油企业资不抵债，出现大规模破产重组浪潮。",
+  "pre_event_timeline": [
+    {
+      "date": "2014-2016",
+      "event": "上一轮油价暴跌后，美国页岩油企业通过高杠杆和新技术维持生产，债务水平持续攀升。"
+    },
+    {
+      "date": "2020-03-06",
+      "event": "OPEC+减产谈判破裂，沙特阿拉伯与俄罗斯爆发价格战，宣布增产并大幅下调官方售价。"
+    },
+    {
+      "date": "2020-03-09",
+      "event": "国际油价单日暴跌约30%，创1991年海湾战争以来最大跌幅，WTI原油价格跌至约30美元/桶。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-04-21",
+      "event": "WTI原油5月期货合约价格跌至负值（-37.63美元/桶），史无前例，市场恐慌情绪达到顶峰。"
+    },
+    {
+      "date": "2020-04-12",
+      "event": "OPEC+达成史上最大规模减产协议，但未能立即扭转市场颓势和页岩油企业的现金流危机。"
+    },
+    {
+      "date": "2020年下半年",
+      "event": "随着油价缓慢回升和破产重组进程推进，幸存页岩油企业开始注重现金流和成本控制，行业整合加速。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 25.57,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 99.9676,
+      "unit": "",
+      "percentile_5y": 38.6,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28578.0,
+      "unit": "",
+      "percentile_5y": 80.3,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 84.28,
+      "unit": "",
+      "percentile_5y": 4.9,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 518640.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 43.83,
+      "unit": "",
+      "percentile_5y": 99.8,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-04-17",
+        "close": 28.08
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-04-20",
+          "close": 25.57,
+          "return_pct": -8.94
+        },
+        {
+          "day": "t+1",
+          "date": "2020-04-21",
+          "close": 19.33,
+          "return_pct": -31.16
+        },
+        {
+          "day": "t+2",
+          "date": "2020-04-22",
+          "close": 20.37,
+          "return_pct": -27.46
+        },
+        {
+          "day": "t+3",
+          "date": "2020-04-23",
+          "close": 21.33,
+          "return_pct": -24.04
+        },
+        {
+          "day": "t+4",
+          "date": "2020-04-24",
+          "close": 21.44,
+          "return_pct": -23.65
+        },
+        {
+          "day": "t+5",
+          "date": "2020-04-27",
+          "close": 19.99,
+          "return_pct": -28.81
+        },
+        {
+          "day": "t+10",
+          "date": "2020-05-04",
+          "close": 27.2,
+          "return_pct": -3.13
+        },
+        {
+          "day": "t+20",
+          "date": "2020-05-18",
+          "close": 34.81,
+          "return_pct": 23.97
+        },
+        {
+          "day": "t+30",
+          "date": "2020-06-01",
+          "close": 38.32,
+          "return_pct": 36.47
+        },
+        {
+          "day": "t+60",
+          "date": "2020-07-13",
+          "close": 42.72,
+          "return_pct": 52.14
+        }
+      ],
+      "peak": {
+        "value": 42.3,
+        "day": 46,
+        "date": "2020-06-05",
+        "return_since_pre": 50.64
+      },
+      "trough": {
+        "value": 19.33,
+        "day": 1,
+        "date": "2020-04-21",
+        "return_since_pre": -31.16
+      },
+      "volatility_pre": 121.99,
+      "volatility_post": 94.69,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件前油价因价格战和疫情已大幅下跌，事件爆发日（4月20日）及次日（21日负油价）出现极端恐慌性抛售，价格跌至历史性低点，随后在减产和需求预期改善下进入漫长而缓慢的修复震荡期。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2020-04-20",
+      "event": "WTI原油5月期货合约交割前日，市场因储油空间耗尽出现恐慌性抛售，收盘价跌至10美元/桶以下，成为压垮众多页岩油企业的最后一根稻草。",
+      "impact": "下跌",
+      "magnitude": "极端"
+    }
+  ],
+  "summary": "在新冠疫情导致需求骤降的背景下，沙特与俄罗斯的价格战引发油价崩盘，暴露了美国页岩油行业高负债、高成本的脆弱性，导致2020年超50家北美油气公司申请破产，行业被迫转向财务纪律和整合。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

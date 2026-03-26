@@ -1,0 +1,202 @@
+{
+  "event_id": "20240419_IAFIS",
+  "event_name": "以色列空袭伊朗石油设施",
+  "event_date": "2024-04-19",
+  "event_timezone": "UTC+8",
+  "location": "伊朗伊斯法罕省",
+  "event_type": "供给冲击",
+  "subtype": "战争",
+  "involved_countries": [
+    "以色列",
+    "伊朗"
+  ],
+  "brief_description": "以色列对伊朗伊斯法罕省的石油设施发动空袭，作为对伊朗此前袭击的报复，加剧中东紧张局势。",
+  "pre_event_timeline": [
+    {
+      "date": "2024-04-01",
+      "event": "以色列空袭伊朗驻叙利亚大使馆，导致多名伊朗高级军官死亡。"
+    },
+    {
+      "date": "2024-04-13",
+      "event": "伊朗向以色列发射数百架无人机和导弹进行报复，大部分被拦截。"
+    },
+    {
+      "date": "2024-04-18",
+      "event": "以色列战时内阁会议决定对伊朗的袭击做出回应。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2024-04-19",
+      "event": "伊朗官方淡化袭击影响，称伊斯法罕核设施安全，未造成重大损失。"
+    },
+    {
+      "date": "2024-04-22",
+      "event": "国际社会呼吁双方保持克制，避免中东局势全面升级。"
+    },
+    {
+      "date": "2024-04-25",
+      "event": "市场担忧情绪缓解，油价从事件驱动的高点回落。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 87.29,
+      "unit": "美元/桶",
+      "percentile_5y": 77.2,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 106.1149,
+      "unit": "",
+      "percentile_5y": 84.5,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 26646.0,
+      "unit": "",
+      "percentile_5y": 23.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.9,
+      "unit": "",
+      "percentile_5y": 31.1,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 453625.0,
+      "unit": "",
+      "percentile_5y": 80.8,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 18.71,
+      "unit": "",
+      "percentile_5y": 57.0,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2024-04-18",
+        "close": 87.11
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2024-04-19",
+          "close": 87.29,
+          "return_pct": 0.21
+        },
+        {
+          "day": "t+1",
+          "date": "2024-04-22",
+          "close": 87.0,
+          "return_pct": -0.13
+        },
+        {
+          "day": "t+2",
+          "date": "2024-04-23",
+          "close": 88.42,
+          "return_pct": 1.5
+        },
+        {
+          "day": "t+3",
+          "date": "2024-04-24",
+          "close": 88.02,
+          "return_pct": 1.04
+        },
+        {
+          "day": "t+4",
+          "date": "2024-04-25",
+          "close": 89.01,
+          "return_pct": 2.18
+        },
+        {
+          "day": "t+5",
+          "date": "2024-04-26",
+          "close": 89.5,
+          "return_pct": 2.74
+        },
+        {
+          "day": "t+10",
+          "date": "2024-05-03",
+          "close": 82.96,
+          "return_pct": -4.76
+        },
+        {
+          "day": "t+20",
+          "date": "2024-05-17",
+          "close": 83.98,
+          "return_pct": -3.59
+        },
+        {
+          "day": "t+30",
+          "date": "2024-05-31",
+          "close": 81.62,
+          "return_pct": -6.3
+        },
+        {
+          "day": "t+60",
+          "date": "2024-07-12",
+          "close": 85.03,
+          "return_pct": -2.39
+        }
+      ],
+      "peak": {
+        "value": 89.5,
+        "day": 7,
+        "date": "2024-04-26",
+        "return_since_pre": 2.74
+      },
+      "trough": {
+        "value": 77.52,
+        "day": 46,
+        "date": "2024-06-04",
+        "return_since_pre": -11.01
+      },
+      "volatility_pre": 18.73,
+      "volatility_post": 22.82,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件突发导致油价因恐慌和供给担忧快速冲高，随后因实际供应未受严重影响且冲突未扩大，价格迅速回落至事件前水平。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2024-04-19",
+      "event": "以色列发动空袭消息传出",
+      "impact": "上涨",
+      "magnitude": "中等"
+    },
+    {
+      "day": 1,
+      "date": "2024-04-20",
+      "event": "伊朗淡化袭击影响，未宣布立即报复",
+      "impact": "反转",
+      "magnitude": "中等"
+    }
+  ],
+  "summary": "以色列为报复伊朗袭击而空袭其石油设施，事件凸显中东代理人冲突升级风险。市场因供给中断担忧而油价跳涨，但在伊朗克制回应后快速修复，显示地缘风险溢价具有暂时性。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

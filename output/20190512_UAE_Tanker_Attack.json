@@ -1,0 +1,211 @@
+{
+  "event_id": "20190512_UAE_Tanker_Attack",
+  "event_name": "阿联酋油轮遭袭",
+  "event_date": "2019-05-12",
+  "event_timezone": "UTC+8",
+  "location": "阿联酋富查伊拉港附近海域",
+  "event_type": "供给冲击",
+  "subtype": "战争",
+  "involved_countries": [
+    "阿联酋",
+    "沙特阿拉伯",
+    "伊朗",
+    "也门"
+  ],
+  "brief_description": "阿联酋富查伊拉港附近四艘油轮遭蓄意破坏，加剧了地区紧张局势并威胁霍尔木兹海峡航运安全。",
+  "pre_event_timeline": [
+    {
+      "date": "2018-05-08",
+      "event": "美国单方面退出伊核协议，并重启对伊朗的严厉制裁。"
+    },
+    {
+      "date": "2019-04-08",
+      "event": "美国将伊朗伊斯兰革命卫队列为“恐怖组织”，美伊对抗升级。"
+    },
+    {
+      "date": "2019-05-05",
+      "event": "美国向中东地区部署航母战斗群和轰炸机，以应对所谓的“伊朗威胁”。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2019-05-14",
+      "event": "沙特阿拉伯的两处石油泵站遭胡塞武装无人机袭击。"
+    },
+    {
+      "date": "2019-06-13",
+      "event": "两艘油轮在阿曼湾遇袭，美国指责伊朗是幕后黑手。"
+    },
+    {
+      "date": "2019-09-14",
+      "event": "沙特阿美石油公司两处关键石油设施遭无人机和导弹袭击，导致全球石油供应短暂中断。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 70.62,
+      "unit": "美元/桶",
+      "percentile_5y": 22.5,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 97.3356,
+      "unit": "",
+      "percentile_5y": 20.7,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 30123.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.86,
+      "unit": "",
+      "percentile_5y": 31.1,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 472035.0,
+      "unit": "",
+      "percentile_5y": 93.1,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 16.04,
+      "unit": "",
+      "percentile_5y": 30.0,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2019-05-10",
+        "close": 70.62
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2019-05-13",
+          "close": 70.23,
+          "return_pct": -0.55
+        },
+        {
+          "day": "t+1",
+          "date": "2019-05-14",
+          "close": 71.24,
+          "return_pct": 0.88
+        },
+        {
+          "day": "t+2",
+          "date": "2019-05-15",
+          "close": 71.77,
+          "return_pct": 1.63
+        },
+        {
+          "day": "t+3",
+          "date": "2019-05-16",
+          "close": 72.62,
+          "return_pct": 2.83
+        },
+        {
+          "day": "t+4",
+          "date": "2019-05-17",
+          "close": 72.21,
+          "return_pct": 2.25
+        },
+        {
+          "day": "t+5",
+          "date": "2019-05-20",
+          "close": 71.97,
+          "return_pct": 1.91
+        },
+        {
+          "day": "t+10",
+          "date": "2019-05-27",
+          "close": 70.11,
+          "return_pct": -0.72
+        },
+        {
+          "day": "t+20",
+          "date": "2019-06-10",
+          "close": 62.29,
+          "return_pct": -11.8
+        },
+        {
+          "day": "t+30",
+          "date": "2019-06-24",
+          "close": 64.86,
+          "return_pct": -8.16
+        },
+        {
+          "day": "t+60",
+          "date": "2019-08-05",
+          "close": 59.81,
+          "return_pct": -15.31
+        }
+      ],
+      "peak": {
+        "value": 72.62,
+        "day": 4,
+        "date": "2019-05-16",
+        "return_since_pre": 2.83
+      },
+      "trough": {
+        "value": 59.97,
+        "day": 31,
+        "date": "2019-06-12",
+        "return_since_pre": -15.08
+      },
+      "volatility_pre": 16.82,
+      "volatility_post": 35.17,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件突发引发供应中断担忧，油价快速跳涨；随着事态发展未立即演变为大规模军事冲突，且无持续的实际供应损失，市场风险溢价逐渐消退，油价随之回落。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2019-05-12",
+      "event": "四艘油轮在阿联酋附近海域遭破坏性袭击，引发市场对中东石油供应安全的担忧。",
+      "impact": "上涨",
+      "magnitude": "中等"
+    },
+    {
+      "day": 2,
+      "date": "2019-05-14",
+      "event": "沙特石油泵站遇袭，证实地区冲突升级，供应风险溢价进一步推高油价。",
+      "impact": "上涨",
+      "magnitude": "中等"
+    },
+    {
+      "day": 32,
+      "date": "2019-06-13",
+      "event": "阿曼湾油轮遇袭，美伊紧张关系达到新高度，但市场担忧情绪在未发生全面冲突后部分缓解。",
+      "impact": "反转",
+      "magnitude": "中等"
+    }
+  ],
+  "summary": "此次袭击是2019年美伊对抗升级背景下，针对中东关键石油基础设施的一系列破坏行动的开端，凸显了霍尔木兹海峡的战略脆弱性。事件短期内推高了油价风险溢价，但未造成实际大规模供应中断，价格在冲高后因未爆发全面战争而回落。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

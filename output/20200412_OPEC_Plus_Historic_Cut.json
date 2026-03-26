@@ -1,0 +1,196 @@
+{
+  "event_id": "20200412_OPEC_Plus_Historic_Cut",
+  "event_name": "OPEC+达成历史性减产协议",
+  "event_date": "2020-04-12",
+  "event_timezone": "UTC+8",
+  "location": "线上会议",
+  "event_type": "供给冲击",
+  "subtype": "减产",
+  "involved_countries": [
+    "沙特阿拉伯",
+    "俄罗斯",
+    "美国"
+  ],
+  "brief_description": "OPEC+达成史上最大规模减产协议，以应对新冠疫情导致的需求崩溃和油价暴跌。",
+  "pre_event_timeline": [
+    {
+      "date": "2020-03-06",
+      "event": "OPEC+维也纳会议破裂，俄罗斯拒绝进一步减产提议。"
+    },
+    {
+      "date": "2020-03-08",
+      "event": "沙特宣布大幅下调官方售价并计划增产，开启价格战。"
+    },
+    {
+      "date": "2020-04-09",
+      "event": "OPEC+召开紧急视频会议，讨论大规模减产，但未能达成协议。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-04-13",
+      "event": "G20能源部长会议召开，支持OPEC+稳定市场的努力。"
+    },
+    {
+      "date": "2020-05-01",
+      "event": "OPEC+达成的970万桶/日减产协议正式生效。"
+    },
+    {
+      "date": "2020-06-06",
+      "event": "OPEC+同意将首轮减产延长一个月至7月底。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 31.48,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 99.5179,
+      "unit": "",
+      "percentile_5y": 36.1,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28578.0,
+      "unit": "",
+      "percentile_5y": 80.3,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 84.28,
+      "unit": "",
+      "percentile_5y": 4.9,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 503618.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 41.67,
+      "unit": "",
+      "percentile_5y": 99.8,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-04-09",
+        "close": 31.48
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-04-13",
+          "close": 31.74,
+          "return_pct": 0.83
+        },
+        {
+          "day": "t+1",
+          "date": "2020-04-14",
+          "close": 29.6,
+          "return_pct": -5.97
+        },
+        {
+          "day": "t+2",
+          "date": "2020-04-15",
+          "close": 27.69,
+          "return_pct": -12.04
+        },
+        {
+          "day": "t+3",
+          "date": "2020-04-16",
+          "close": 27.82,
+          "return_pct": -11.63
+        },
+        {
+          "day": "t+4",
+          "date": "2020-04-17",
+          "close": 28.08,
+          "return_pct": -10.8
+        },
+        {
+          "day": "t+5",
+          "date": "2020-04-20",
+          "close": 25.57,
+          "return_pct": -18.77
+        },
+        {
+          "day": "t+10",
+          "date": "2020-04-27",
+          "close": 19.99,
+          "return_pct": -36.5
+        },
+        {
+          "day": "t+20",
+          "date": "2020-05-11",
+          "close": 29.63,
+          "return_pct": -5.88
+        },
+        {
+          "day": "t+30",
+          "date": "2020-05-25",
+          "close": 35.53,
+          "return_pct": 12.87
+        },
+        {
+          "day": "t+60",
+          "date": "2020-07-06",
+          "close": 43.1,
+          "return_pct": 36.91
+        }
+      ],
+      "peak": {
+        "value": 42.3,
+        "day": 54,
+        "date": "2020-06-05",
+        "return_since_pre": 34.37
+      },
+      "trough": {
+        "value": 19.33,
+        "day": 9,
+        "date": "2020-04-21",
+        "return_since_pre": -38.6
+      },
+      "volatility_pre": 119.63,
+      "volatility_post": 101.98,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "协议达成消息一度刺激油价在电子盘大幅跳空高开，但随后因市场解读协议细节（特别是自愿减产部分）存在不确定性、且减产规模仍可能无法抵消需求崩塌，油价迅速回吐全部涨幅并转为大跌。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2020-04-13",
+      "event": "市场对减产规模能否抵消需求下滑存疑，且协议细节公布后不及预期",
+      "impact": "下跌",
+      "magnitude": "大幅低开，日内跌幅一度超10%"
+    }
+  ],
+  "summary": "在新冠疫情引发全球需求骤降和沙特-俄罗斯价格战的双重冲击下，OPEC+被迫达成史上最大规模减产协议。协议初期因市场担忧其不足以平衡市场而未能阻止油价下跌，但为后续市场缓慢复苏奠定了基础，凸显了在极端危机中协同行动的难度与必要性。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

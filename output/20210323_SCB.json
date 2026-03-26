@@ -1,0 +1,204 @@
+{
+  "event_id": "20210323_SCB",
+  "event_name": "苏伊士运河堵塞",
+  "event_date": "2021-03-23",
+  "event_timezone": "UTC+8",
+  "location": "埃及苏伊士运河",
+  "event_type": "供给冲击",
+  "subtype": "航运事故",
+  "involved_countries": [
+    "埃及",
+    "巴拿马",
+    "中国台湾地区（船籍）",
+    "日本（船东）"
+  ],
+  "brief_description": "长赐号货轮在苏伊士运河搁浅，导致全球最重要航道之一双向交通完全中断。",
+  "pre_event_timeline": [
+    {
+      "date": "2021-03-20",
+      "event": "长赐号从中国宁波港出发，计划经苏伊士运河前往荷兰鹿特丹。"
+    },
+    {
+      "date": "2021-03-22",
+      "event": "苏伊士运河地区遭遇强风和沙尘暴天气。"
+    },
+    {
+      "date": "2021-03-23",
+      "event": "长赐号在通过苏伊士运河时，因强风和能见度低导致操作困难。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2021-03-29",
+      "event": "经过多日救援努力，长赐号成功脱浅，苏伊士运河恢复通航。"
+    },
+    {
+      "date": "2021-04-01",
+      "event": "运河管理局宣布积压的422艘船只已全部通过，交通恢复正常。"
+    },
+    {
+      "date": "2021-07-07",
+      "event": "埃及与长赐号船东达成赔偿协议，船只获准离开。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 60.79,
+      "unit": "美元/桶",
+      "percentile_5y": 0.8,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 92.3527,
+      "unit": "",
+      "percentile_5y": 5.7,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 24844.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 70.8,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 502711.0,
+      "unit": "",
+      "percentile_5y": 99.6,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 20.3,
+      "unit": "",
+      "percentile_5y": 67.6,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2021-03-22",
+        "close": 64.62
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2021-03-23",
+          "close": 60.79,
+          "return_pct": -5.93
+        },
+        {
+          "day": "t+1",
+          "date": "2021-03-24",
+          "close": 64.41,
+          "return_pct": -0.32
+        },
+        {
+          "day": "t+2",
+          "date": "2021-03-25",
+          "close": 61.95,
+          "return_pct": -4.13
+        },
+        {
+          "day": "t+3",
+          "date": "2021-03-26",
+          "close": 64.57,
+          "return_pct": -0.08
+        },
+        {
+          "day": "t+4",
+          "date": "2021-03-29",
+          "close": 64.98,
+          "return_pct": 0.56
+        },
+        {
+          "day": "t+5",
+          "date": "2021-03-30",
+          "close": 64.14,
+          "return_pct": -0.74
+        },
+        {
+          "day": "t+10",
+          "date": "2021-04-07",
+          "close": 63.16,
+          "return_pct": -2.26
+        },
+        {
+          "day": "t+20",
+          "date": "2021-04-21",
+          "close": 65.32,
+          "return_pct": 1.08
+        },
+        {
+          "day": "t+30",
+          "date": "2021-05-05",
+          "close": 68.96,
+          "return_pct": 6.72
+        },
+        {
+          "day": "t+60",
+          "date": "2021-06-16",
+          "close": 74.39,
+          "return_pct": 15.12
+        }
+      ],
+      "peak": {
+        "value": 69.46,
+        "day": 55,
+        "date": "2021-05-17",
+        "return_since_pre": 7.49
+      },
+      "trough": {
+        "value": 60.79,
+        "day": 0,
+        "date": "2021-03-23",
+        "return_since_pre": -5.93
+      },
+      "volatility_pre": 31.79,
+      "volatility_post": 31.15,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件突发导致市场对供应链中断的恐慌，推动原油等大宗商品价格快速冲高；随着救援进展顺利和通航恢复预期增强，价格迅速回落至事件前水平，呈现典型的短期冲击模式。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2021-03-23",
+      "event": "长赐号搁浅，运河交通完全中断。",
+      "impact": "上涨",
+      "magnitude": "原油期货当日上涨约6%，市场担忧供应链中断。"
+    },
+    {
+      "day": 7,
+      "date": "2021-03-29",
+      "event": "长赐号成功脱浅，救援行动取得决定性突破。",
+      "impact": "下跌/反转",
+      "magnitude": "消息公布后，原油期货价格迅速回吐部分涨幅，市场紧张情绪缓解。"
+    }
+  ],
+  "summary": "因极端天气和操作失误，超大型货轮在苏伊士运河搁浅，导致全球约12%贸易量的关键航道中断近一周，引发对全球供应链脆弱性的广泛担忧，并短暂推高了油价和航运成本。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

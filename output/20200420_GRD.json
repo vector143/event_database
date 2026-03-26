@@ -1,0 +1,208 @@
+{
+  "event_id": "20200420_GRD",
+  "event_name": "全球石油需求创纪录暴跌",
+  "event_date": "2020-04-20",
+  "event_timezone": "UTC+8",
+  "location": "全球",
+  "event_type": "需求冲击",
+  "subtype": "疫情",
+  "involved_countries": [
+    "全球主要经济体"
+  ],
+  "brief_description": "新冠疫情导致全球经济活动停滞，石油需求出现史无前例的暴跌，引发市场恐慌和价格崩溃。",
+  "pre_event_timeline": [
+    {
+      "date": "2020-01-23",
+      "event": "中国武汉因新冠疫情实施封城，经济活动骤降，石油需求开始下滑。"
+    },
+    {
+      "date": "2020-03-11",
+      "event": "世界卫生组织宣布新冠疫情为全球大流行，多国开始采取封锁措施。"
+    },
+    {
+      "date": "2020-03-06",
+      "event": "OPEC+减产谈判破裂，沙特宣布增产并发动价格战，加剧市场供应过剩预期。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2020-04-21",
+      "event": "美国WTI原油5月期货合约跌至负值，为历史首次，市场出现极端恐慌。"
+    },
+    {
+      "date": "2020-04-12",
+      "event": "OPEC+达成史上最大规模减产协议，同意自5月起每日减产970万桶。"
+    },
+    {
+      "date": "2020-05-01",
+      "event": "主要经济体开始逐步解除封锁，石油需求缓慢回升，市场情绪逐渐稳定。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 25.57,
+      "unit": "美元/桶",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 99.9676,
+      "unit": "",
+      "percentile_5y": 38.6,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28578.0,
+      "unit": "",
+      "percentile_5y": 80.3,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 84.28,
+      "unit": "",
+      "percentile_5y": 4.9,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 518640.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 43.83,
+      "unit": "",
+      "percentile_5y": 99.8,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2020-04-17",
+        "close": 28.08
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2020-04-20",
+          "close": 25.57,
+          "return_pct": -8.94
+        },
+        {
+          "day": "t+1",
+          "date": "2020-04-21",
+          "close": 19.33,
+          "return_pct": -31.16
+        },
+        {
+          "day": "t+2",
+          "date": "2020-04-22",
+          "close": 20.37,
+          "return_pct": -27.46
+        },
+        {
+          "day": "t+3",
+          "date": "2020-04-23",
+          "close": 21.33,
+          "return_pct": -24.04
+        },
+        {
+          "day": "t+4",
+          "date": "2020-04-24",
+          "close": 21.44,
+          "return_pct": -23.65
+        },
+        {
+          "day": "t+5",
+          "date": "2020-04-27",
+          "close": 19.99,
+          "return_pct": -28.81
+        },
+        {
+          "day": "t+10",
+          "date": "2020-05-04",
+          "close": 27.2,
+          "return_pct": -3.13
+        },
+        {
+          "day": "t+20",
+          "date": "2020-05-18",
+          "close": 34.81,
+          "return_pct": 23.97
+        },
+        {
+          "day": "t+30",
+          "date": "2020-06-01",
+          "close": 38.32,
+          "return_pct": 36.47
+        },
+        {
+          "day": "t+60",
+          "date": "2020-07-13",
+          "close": 42.72,
+          "return_pct": 52.14
+        }
+      ],
+      "peak": {
+        "value": 42.3,
+        "day": 46,
+        "date": "2020-06-05",
+        "return_since_pre": 50.64
+      },
+      "trough": {
+        "value": 19.33,
+        "day": 1,
+        "date": "2020-04-21",
+        "return_since_pre": -31.16
+      },
+      "volatility_pre": 121.99,
+      "volatility_post": 94.69,
+      "pattern": "冲高回落/快速修复",
+      "pattern_interpretation": "事件前因价格战和疫情担忧油价已从高位回落；事件期间因需求崩溃和存储危机导致价格断崖式下跌至负值；随后在超大规模联合减产和经济活动重启的推动下，价格从极端低位快速反弹修复。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2020-04-20",
+      "event": "全球石油需求暴跌预期达到顶峰，市场对存储空间耗尽的担忧加剧。",
+      "impact": "下跌",
+      "magnitude": "极端"
+    },
+    {
+      "day": 2,
+      "date": "2020-04-21",
+      "event": "WTI原油5月期货合约结算价跌至-37.63美元/桶，出现负油价。",
+      "impact": "下跌",
+      "magnitude": "历史性极端"
+    },
+    {
+      "day": 15,
+      "date": "2020-05-05",
+      "event": "随着减产协议生效和部分国家重启经济，油价开始触底反弹。",
+      "impact": "反转",
+      "magnitude": "显著"
+    }
+  ],
+  "summary": "新冠疫情引发全球封锁导致石油需求史无前例地锐减，叠加OPEC+价格战造成的供应过剩，共同导致油价暴跌甚至出现负值；价格在极端恐慌后随着大规模减产和经济重启而逐步修复。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

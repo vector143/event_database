@@ -1,0 +1,195 @@
+{
+  "event_id": "20210411_IAF",
+  "event_name": "伊朗核设施遭袭",
+  "event_date": "2021-04-11",
+  "event_timezone": "UTC+8",
+  "location": "伊朗纳坦兹核设施",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "伊朗",
+    "以色列"
+  ],
+  "brief_description": "伊朗纳坦兹核设施发生爆炸，被广泛认为是网络攻击或破坏行动，加剧了中东紧张局势。",
+  "pre_event_timeline": [
+    {
+      "date": "2020-11-27",
+      "event": "伊朗首席核科学家法赫里扎德在德黑兰附近遇刺身亡，伊朗指责以色列所为。"
+    },
+    {
+      "date": "2021-02-23",
+      "event": "伊朗宣布将停止执行《核不扩散条约》附加议定书，限制国际原子能机构核查。"
+    },
+    {
+      "date": "2021-04-10",
+      "event": "伊朗宣布在纳坦兹核设施启动164台IR-6型离心机，提升铀浓缩能力。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2021-04-12",
+      "event": "伊朗官方谴责此次袭击为“核恐怖主义”，并宣布将把铀浓缩丰度提升至60%。"
+    },
+    {
+      "date": "2021-04-13",
+      "event": "伊朗与伊核协议相关方在维也纳重启间接会谈，但气氛因袭击事件而紧张。"
+    },
+    {
+      "date": "2021-04-15",
+      "event": "伊朗对以色列货船“海豚”号发动袭击作为报复，地区紧张局势升级。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 62.95,
+      "unit": "美元/桶",
+      "percentile_5y": 3.6,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 92.1766,
+      "unit": "",
+      "percentile_5y": 4.9,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 25018.0,
+      "unit": "",
+      "percentile_5y": 1.6,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 79.23,
+      "unit": "",
+      "percentile_5y": 1.6,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 492423.0,
+      "unit": "",
+      "percentile_5y": 97.7,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 16.69,
+      "unit": "",
+      "percentile_5y": 37.8,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2021-04-09",
+        "close": 62.95
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2021-04-12",
+          "close": 63.28,
+          "return_pct": 0.52
+        },
+        {
+          "day": "t+1",
+          "date": "2021-04-13",
+          "close": 63.67,
+          "return_pct": 1.14
+        },
+        {
+          "day": "t+2",
+          "date": "2021-04-14",
+          "close": 66.58,
+          "return_pct": 5.77
+        },
+        {
+          "day": "t+3",
+          "date": "2021-04-15",
+          "close": 66.94,
+          "return_pct": 6.34
+        },
+        {
+          "day": "t+4",
+          "date": "2021-04-16",
+          "close": 66.77,
+          "return_pct": 6.07
+        },
+        {
+          "day": "t+5",
+          "date": "2021-04-19",
+          "close": 67.05,
+          "return_pct": 6.51
+        },
+        {
+          "day": "t+10",
+          "date": "2021-04-26",
+          "close": 65.65,
+          "return_pct": 4.29
+        },
+        {
+          "day": "t+20",
+          "date": "2021-05-10",
+          "close": 68.32,
+          "return_pct": 8.53
+        },
+        {
+          "day": "t+30",
+          "date": "2021-05-24",
+          "close": 68.46,
+          "return_pct": 8.75
+        },
+        {
+          "day": "t+60",
+          "date": "2021-07-05",
+          "close": 77.16,
+          "return_pct": 22.57
+        }
+      ],
+      "peak": {
+        "value": 72.52,
+        "day": 60,
+        "date": "2021-06-10",
+        "return_since_pre": 15.2
+      },
+      "trough": {
+        "value": 63.28,
+        "day": 1,
+        "date": "2021-04-12",
+        "return_since_pre": 0.52
+      },
+      "volatility_pre": 40.73,
+      "volatility_post": 23.86,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件初期引发市场对中东石油供应中断的担忧，推动油价快速冲高；但随着事件被定性为有限打击且未直接影响石油设施，市场情绪缓和，油价回落。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2021-04-12",
+      "event": "伊朗宣布将铀浓缩丰度提升至60%，远超伊核协议规定的3.67%上限。",
+      "impact": "上涨",
+      "magnitude": "中等"
+    }
+  ],
+  "summary": "此次袭击是伊以“影子战争”的关键节点，直接导致伊朗大幅提升铀浓缩活动作为报复，严重破坏了伊核协议谈判进程，并加剧了中东地区的军事对抗风险。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

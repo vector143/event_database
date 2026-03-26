@@ -1,0 +1,202 @@
+{
+  "event_id": "20181105_USIranOilSanctions",
+  "event_name": "美国重启对伊朗石油制裁",
+  "event_date": "2018-11-05",
+  "event_timezone": "UTC+8",
+  "location": "美国华盛顿特区",
+  "event_type": "宏观政策",
+  "subtype": "制裁",
+  "involved_countries": [
+    "美国",
+    "伊朗"
+  ],
+  "brief_description": "美国正式重启对伊朗石油出口的全面制裁，旨在切断伊朗主要收入来源，导致全球石油供应紧张。",
+  "pre_event_timeline": [
+    {
+      "date": "2018-05-08",
+      "event": "美国总统特朗普宣布美国单方面退出伊核协议（JCPOA）。"
+    },
+    {
+      "date": "2018-08-07",
+      "event": "美国重启对伊朗非能源领域的第一批制裁。"
+    },
+    {
+      "date": "2018-10-02",
+      "event": "印度等国开始削减伊朗石油进口，以应对美国制裁压力。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2018-11-05",
+      "event": "美国给予中国、印度等8个国家和地区180天的临时豁免，允许其继续有限进口伊朗石油。"
+    },
+    {
+      "date": "2019-04-22",
+      "event": "美国宣布终止所有伊朗石油进口豁免，要求各国将伊朗石油进口量降至零。"
+    },
+    {
+      "date": "2019-05-02",
+      "event": "美国对伊朗的“零石油出口”政策正式生效，伊朗石油出口量大幅下滑。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 73.17,
+      "unit": "美元/桶",
+      "percentile_5y": 30.1,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 96.3465,
+      "unit": "",
+      "percentile_5y": 17.7,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 32358.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 89.14,
+      "unit": "",
+      "percentile_5y": 34.4,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 431787.0,
+      "unit": "",
+      "percentile_5y": 52.9,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 19.96,
+      "unit": "",
+      "percentile_5y": 66.3,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2018-11-02",
+        "close": 72.83
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2018-11-05",
+          "close": 73.17,
+          "return_pct": 0.47
+        },
+        {
+          "day": "t+1",
+          "date": "2018-11-06",
+          "close": 72.13,
+          "return_pct": -0.96
+        },
+        {
+          "day": "t+2",
+          "date": "2018-11-07",
+          "close": 72.07,
+          "return_pct": -1.04
+        },
+        {
+          "day": "t+3",
+          "date": "2018-11-08",
+          "close": 70.65,
+          "return_pct": -2.99
+        },
+        {
+          "day": "t+4",
+          "date": "2018-11-09",
+          "close": 70.18,
+          "return_pct": -3.64
+        },
+        {
+          "day": "t+5",
+          "date": "2018-11-12",
+          "close": 70.12,
+          "return_pct": -3.72
+        },
+        {
+          "day": "t+10",
+          "date": "2018-11-19",
+          "close": 66.79,
+          "return_pct": -8.29
+        },
+        {
+          "day": "t+20",
+          "date": "2018-12-03",
+          "close": 61.69,
+          "return_pct": -15.3
+        },
+        {
+          "day": "t+30",
+          "date": "2018-12-17",
+          "close": 59.61,
+          "return_pct": -18.15
+        },
+        {
+          "day": "t+60",
+          "date": "2019-01-30",
+          "close": 61.65,
+          "return_pct": -15.35
+        }
+      ],
+      "peak": {
+        "value": 73.17,
+        "day": 0,
+        "date": "2018-11-05",
+        "return_since_pre": 0.47
+      },
+      "trough": {
+        "value": 50.47,
+        "day": 49,
+        "date": "2018-12-24",
+        "return_since_pre": -30.7
+      },
+      "volatility_pre": 24.83,
+      "volatility_post": 49.46,
+      "pattern": "冲高回落/震荡",
+      "pattern_interpretation": "制裁生效前因预期推动油价冲高，生效初期因豁免和沙特增产预期而回落，后续随着豁免取消等消息呈现震荡走势，整体受地缘政治消息驱动明显。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 0,
+      "date": "2018-11-05",
+      "event": "制裁正式生效，但伴随豁免，市场供应担忧部分缓解。",
+      "impact": "下跌",
+      "magnitude": "中等"
+    },
+    {
+      "day": 170,
+      "date": "2019-04-22",
+      "event": "美国宣布终止所有豁免，市场对供应缺口担忧急剧升温。",
+      "impact": "上涨",
+      "magnitude": "显著"
+    }
+  ],
+  "summary": "美国单边退出伊核协议后，分阶段重启对伊制裁，核心是切断其石油出口。制裁初期因豁免而冲击有限，但终止豁免后导致供应紧张预期升温，推动油价阶段性上涨，体现了地缘政治风险与市场实际供应间的博弈。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

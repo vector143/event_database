@@ -1,0 +1,213 @@
+{
+  "event_id": "20080915_GFC",
+  "event_name": "全球金融危机爆发",
+  "event_date": "2008-09-15",
+  "event_timezone": "UTC+8",
+  "location": "美国纽约",
+  "event_type": "宏观政策",
+  "subtype": "加息",
+  "involved_countries": [
+    "美国",
+    "英国",
+    "德国",
+    "法国",
+    "中国",
+    "日本"
+  ],
+  "brief_description": "雷曼兄弟破产引发全球金融市场系统性崩溃，标志着次贷危机演变为全球金融危机。",
+  "pre_event_timeline": [
+    {
+      "date": "2007-04-02",
+      "event": "美国第二大次级抵押贷款机构新世纪金融公司申请破产保护，次贷危机初现端倪。"
+    },
+    {
+      "date": "2008-03-16",
+      "event": "美国第五大投行贝尔斯登因流动性危机被摩根大通收购，市场恐慌加剧。"
+    },
+    {
+      "date": "2008-09-07",
+      "event": "美国政府接管陷入困境的房利美和房地美，试图稳定抵押贷款市场。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2008-09-16",
+      "event": "美国政府向保险巨头美国国际集团（AIG）提供850亿美元紧急贷款，防止其倒闭。"
+    },
+    {
+      "date": "2008-10-03",
+      "event": "美国国会通过7000亿美元的问题资产救助计划（TARP），以稳定金融体系。"
+    },
+    {
+      "date": "2009-03-09",
+      "event": "全球主要股市跌至危机期间最低点，随后在各国大规模刺激政策下开始反弹。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 92.38,
+      "unit": "美元/桶",
+      "percentile_5y": 84.4,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 78.49,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 32419.0,
+      "unit": "",
+      "percentile_5y": 100.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 88.0,
+      "unit": "",
+      "percentile_5y": 26.2,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 274154.0,
+      "unit": "",
+      "percentile_5y": 0.0,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 31.7,
+      "unit": "",
+      "percentile_5y": 97.4,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2008-09-12",
+        "close": 97.58
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2008-09-15",
+          "close": 92.38,
+          "return_pct": -5.33
+        },
+        {
+          "day": "t+1",
+          "date": "2008-09-16",
+          "close": 89.22,
+          "return_pct": -8.57
+        },
+        {
+          "day": "t+2",
+          "date": "2008-09-17",
+          "close": 94.84,
+          "return_pct": -2.81
+        },
+        {
+          "day": "t+3",
+          "date": "2008-09-18",
+          "close": 95.19,
+          "return_pct": -2.45
+        },
+        {
+          "day": "t+4",
+          "date": "2008-09-19",
+          "close": 99.61,
+          "return_pct": 2.08
+        },
+        {
+          "day": "t+5",
+          "date": "2008-09-22",
+          "close": 106.04,
+          "return_pct": 8.67
+        },
+        {
+          "day": "t+10",
+          "date": "2008-09-29",
+          "close": 93.98,
+          "return_pct": -3.69
+        },
+        {
+          "day": "t+20",
+          "date": "2008-10-13",
+          "close": 77.46,
+          "return_pct": -20.62
+        },
+        {
+          "day": "t+30",
+          "date": "2008-10-27",
+          "close": 61.41,
+          "return_pct": -37.07
+        },
+        {
+          "day": "t+60",
+          "date": "2008-12-08",
+          "close": 43.42,
+          "return_pct": -55.5
+        }
+      ],
+      "peak": {
+        "value": 106.04,
+        "day": 7,
+        "date": "2008-09-22",
+        "return_since_pre": 8.67
+      },
+      "trough": {
+        "value": 51.99,
+        "day": 59,
+        "date": "2008-11-13",
+        "return_since_pre": -46.72
+      },
+      "volatility_pre": 32.19,
+      "volatility_post": 78.92,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "危机前资产价格（股市、房地产）因宽松信贷和过度投机持续上涨至泡沫高点；危机爆发后价格在恐慌中急速、深幅下跌；在史无前例的政策干预下，市场经历漫长震荡后逐步修复。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2008-09-15",
+      "event": "雷曼兄弟申请破产保护，市场对系统性风险的担忧彻底爆发。",
+      "impact": "下跌",
+      "magnitude": "极端"
+    },
+    {
+      "day": 30,
+      "date": "2008-10-15",
+      "event": "全球主要央行协同降息并注入流动性，恐慌情绪达到顶峰后政策干预开始显现。",
+      "impact": "反转",
+      "magnitude": "重大"
+    },
+    {
+      "day": 180,
+      "date": "2009-03-09",
+      "event": "全球股市触底，各国财政和货币刺激政策合力阻止经济自由落体。",
+      "impact": "反转",
+      "magnitude": "极端"
+    }
+  ],
+  "summary": "由美国房地产泡沫破裂和金融衍生品过度杠杆引发，通过雷曼兄弟破产引爆全球信用冻结，导致股市暴跌、经济衰退，最终依靠全球协同的财政与货币超常规干预才得以稳定，教训是需加强金融监管和宏观审慎管理。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

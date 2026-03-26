@@ -1,0 +1,201 @@
+{
+  "event_id": "20230402_SaudiVoluntaryCut",
+  "event_name": "沙特宣布自愿额外减产",
+  "event_date": "2023-04-02",
+  "event_timezone": "UTC+8",
+  "location": "利雅得",
+  "event_type": "供给冲击",
+  "subtype": "减产",
+  "involved_countries": [
+    "沙特阿拉伯",
+    "俄罗斯",
+    "阿联酋",
+    "科威特",
+    "阿尔及利亚",
+    "阿曼",
+    "伊拉克",
+    "哈萨克斯坦"
+  ],
+  "brief_description": "沙特宣布从5月起自愿额外减产50万桶/日，以稳定石油市场。",
+  "pre_event_timeline": [
+    {
+      "date": "2022-10-05",
+      "event": "OPEC+决定自2022年11月起减产200万桶/日，引发美国不满。"
+    },
+    {
+      "date": "2023-02-01",
+      "event": "欧盟对俄罗斯成品油实施价格上限，全球石油贸易流持续调整。"
+    },
+    {
+      "date": "2023-03-10",
+      "event": "美国硅谷银行倒闭引发金融市场动荡，加剧对经济衰退和石油需求疲软的担忧。"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2023-04-03",
+      "event": "多个OPEC+产油国（俄罗斯、阿联酋等）跟进宣布自愿减产，总规模超160万桶/日。"
+    },
+    {
+      "date": "2023-04-04",
+      "event": "国际油价（布伦特原油）开盘跳涨超8%，创近一年最大单日涨幅。"
+    },
+    {
+      "date": "2023-05-01",
+      "event": "沙特宣布的额外减产措施正式生效，并随后宣布将减产延长至年底。"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 79.77,
+      "unit": "美元/桶",
+      "percentile_5y": 53.6,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 102.597,
+      "unit": "",
+      "percentile_5y": 52.8,
+      "interpretation": "中位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28773.0,
+      "unit": "",
+      "percentile_5y": 85.2,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 89.26,
+      "unit": "",
+      "percentile_5y": 34.4,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 469952.0,
+      "unit": "",
+      "percentile_5y": 92.0,
+      "interpretation": "高位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 18.7,
+      "unit": "",
+      "percentile_5y": 57.0,
+      "interpretation": "中位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2023-03-31",
+        "close": 79.77
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2023-04-03",
+          "close": 84.93,
+          "return_pct": 6.47
+        },
+        {
+          "day": "t+1",
+          "date": "2023-04-04",
+          "close": 84.94,
+          "return_pct": 6.48
+        },
+        {
+          "day": "t+2",
+          "date": "2023-04-05",
+          "close": 84.99,
+          "return_pct": 6.54
+        },
+        {
+          "day": "t+3",
+          "date": "2023-04-06",
+          "close": 85.12,
+          "return_pct": 6.71
+        },
+        {
+          "day": "t+4",
+          "date": "2023-04-10",
+          "close": 84.18,
+          "return_pct": 5.53
+        },
+        {
+          "day": "t+5",
+          "date": "2023-04-11",
+          "close": 85.61,
+          "return_pct": 7.32
+        },
+        {
+          "day": "t+10",
+          "date": "2023-04-18",
+          "close": 84.77,
+          "return_pct": 6.27
+        },
+        {
+          "day": "t+20",
+          "date": "2023-05-02",
+          "close": 75.32,
+          "return_pct": -5.58
+        },
+        {
+          "day": "t+30",
+          "date": "2023-05-16",
+          "close": 74.91,
+          "return_pct": -6.09
+        },
+        {
+          "day": "t+60",
+          "date": "2023-06-27",
+          "close": 72.26,
+          "return_pct": -9.41
+        }
+      ],
+      "peak": {
+        "value": 87.33,
+        "day": 10,
+        "date": "2023-04-12",
+        "return_since_pre": 9.48
+      },
+      "trough": {
+        "value": 72.33,
+        "day": 31,
+        "date": "2023-05-03",
+        "return_since_pre": -9.33
+      },
+      "volatility_pre": 31.44,
+      "volatility_post": 31.9,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "事件宣布后油价跳空高开并快速冲高，但因市场消化信息并对经济衰退的长期担忧仍存，油价未能持续突破前高，随后进入高位震荡并逐步回吐部分涨幅。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2023-04-03",
+      "event": "多个OPEC+成员国宣布跟进自愿减产，形成超预期的集体供给收缩",
+      "impact": "上涨",
+      "magnitude": "高"
+    }
+  ],
+  "summary": "为应对银行业危机引发的需求担忧及维护油价，沙特联合部分OPEC+成员国在既有协议外发起突袭式自愿减产，推动油价短期暴力拉升，凸显OPEC+捍卫油价的决心及其在市场供应端的核心定价权。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}
