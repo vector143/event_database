@@ -1,8 +1,13 @@
+# rag.py
 import numpy as np
 import json
 from pathlib import Path
 from typing import List, Dict, Any
 import pickle
+from sentence_transformers import SentenceTransformer
+
+# 导入配置
+from config import get_client, EMBEDDING_MODEL
 
 
 class NativeRAGRetriever:
@@ -44,24 +49,7 @@ class NativeRAGRetriever:
         print(f"✅ 嵌入完成，维度: {self.embeddings[0].shape}")
 
     def search(self, query: dict, top_k: int = 5) -> List[Dict[str, Any]]:
-        """
-        检索相似事件
-
-        Parameters:
-        -----------
-        query: 结构化查询，格式如:
-            {
-                "event_type": "地缘冲突",
-                "subtype": "战争",
-                "countries": ["伊朗", "美国"],
-                "indicators": {"库存": "低位"}
-            }
-        top_k: 返回数量
-
-        Returns:
-        --------
-        list of dict: 每个包含 event, similarity, event_id
-        """
+        """检索相似事件"""
         # 1. 查询转文本
         query_text = query_to_text(query)
         print(f"🔍 查询文本: {query_text}")
@@ -69,7 +57,7 @@ class NativeRAGRetriever:
         # 2. 查询向量化
         query_emb = self.embedder.encode([query_text])[0]
 
-        # 3. 计算余弦相似度（向量已归一化，点积=余弦）
+        # 3. 计算余弦相似度
         similarities = []
         for emb in self.embeddings:
             sim = np.dot(query_emb, emb)
@@ -89,7 +77,7 @@ class NativeRAGRetriever:
         return results
 
     def save_embeddings(self, save_path: str):
-        """保存嵌入和事件数据，避免重复生成"""
+        """保存嵌入和事件数据"""
         data = {
             'events': self.events,
             'event_ids': self.event_ids,
@@ -112,31 +100,24 @@ class NativeRAGRetriever:
 
 
 def build_event_text(event: dict) -> str:
-    """
-    从事件 JSON 构建用于向量化的文本
-    不含价格路径 pattern（留给未来图检索）
-    """
+    """从事件 JSON 构建用于向量化的文本"""
     parts = []
 
-    # 核心信息
     if event.get('event_name'):
         parts.append(event['event_name'])
 
     if event.get('brief_description'):
         parts.append(event['brief_description'])
 
-    # 类型信息
     event_type = event.get('event_type', '')
     subtype = event.get('subtype', '')
     if event_type or subtype:
         parts.append(f"类型：{event_type}{subtype}")
 
-    # 国家信息
     countries = event.get('involved_countries', [])
     if countries:
         parts.append(f"涉及国家：{', '.join(countries)}")
 
-    # 总结
     if event.get('summary'):
         parts.append(event['summary'])
 
@@ -144,9 +125,7 @@ def build_event_text(event: dict) -> str:
 
 
 def query_to_text(query: dict) -> str:
-    """
-    结构化查询转自然语言文本
-    """
+    """结构化查询转自然语言文本"""
     parts = []
 
     if query.get('event_type'):
@@ -160,7 +139,6 @@ def query_to_text(query: dict) -> str:
         ind_str = '、'.join([f"{k}{v}" for k, v in query['indicators'].items()])
         parts.append(f"指标状态：{ind_str}")
 
-    # 如果没有结构化字段，直接用文本
     if not parts and query.get('query_text'):
         return query['query_text']
 
@@ -169,14 +147,12 @@ def query_to_text(query: dict) -> str:
 
 def generate_analysis(query: dict, results: List[Dict], llm_client) -> str:
     """用 LLM 生成对比分析报告"""
-
     # 构建事件对比文本
     events_text = ""
     for i, r in enumerate(results, 1):
         event = r["event"]
         sim = r["similarity"]
 
-        # 提取价格路径关键数据
         price = event.get('price_path', {}).get('brent', {})
         peak = price.get('peak', {})
         trough = price.get('trough', {})
@@ -213,11 +189,12 @@ def generate_analysis(query: dict, results: List[Dict], llm_client) -> str:
         response = llm_client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一个原油市场分析专家，擅长基于历史事件进行类比分析。"},
+                {"role": "system",
+                 "content": "你是一个历史事件分析专家，精通全球经济、政治和能源市场。必须只返回JSON格式。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.3,
-            max_tokens=1500
+            max_tokens=2000
         )
         return response.choices[0].message.content
     except Exception as e:
