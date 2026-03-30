@@ -872,73 +872,86 @@ def main():
     )
 
     # 事件清单
-    events = [
-        "海湾战争爆发",
-        "伊拉克战争爆发",
-        "利比亚内战爆发",
-        "伊朗核设施遭袭",
-        "也门胡塞武装袭击沙特油田",
-        "阿联酋油轮遭袭",
-        "以色列空袭伊朗石油设施",
-        "尼日利亚三角洲武装袭击",
-        "OPEC+达成历史性减产协议",
-        "OPEC+增产谈判破裂",
-        "OPEC+减产协议到期",
-        "沙特宣布自愿额外减产",
-        "OPEC+会议推迟",
-        "沙特俄罗斯石油价格战",
-        "美国重启对伊朗石油制裁",
-        "美国宣布对委内瑞拉石油制裁",
-        "欧盟宣布禁运俄罗斯石油",
-        "G7宣布对俄罗斯石油限价",
-        "美国释放战略石油储备",
-        "新冠疫情全球大流行",
-        "全球石油需求创纪录暴跌",
-        "美国页岩油破产潮",
-        "苏伊士运河堵塞",
-        "沙特石油设施遭无人机袭击",
-        "美联储开启加息周期",
-        "美联储紧急降息",
-        "美元指数突破新高",
-        "全球金融危机爆发"
-    ]
+    # events = [
+    #     "海湾战争爆发",
+    #     "伊拉克战争爆发",
+    #     "利比亚内战爆发",
+    #     "伊朗核设施遭袭",
+    #     "也门胡塞武装袭击沙特油田",
+    #     "阿联酋油轮遭袭",
+    #     "以色列空袭伊朗石油设施",
+    #     "尼日利亚三角洲武装袭击",
+    #     "OPEC+达成历史性减产协议",
+    #     "OPEC+增产谈判破裂",
+    #     "OPEC+减产协议到期",
+    #     "沙特宣布自愿额外减产",
+    #     "OPEC+会议推迟",
+    #     "沙特俄罗斯石油价格战",
+    #     "美国重启对伊朗石油制裁",
+    #     "美国宣布对委内瑞拉石油制裁",
+    #     "欧盟宣布禁运俄罗斯石油",
+    #     "G7宣布对俄罗斯石油限价",
+    #     "美国释放战略石油储备",
+    #     "新冠疫情全球大流行",
+    #     "全球石油需求创纪录暴跌",
+    #     "美国页岩油破产潮",
+    #     "苏伊士运河堵塞",
+    #     "沙特石油设施遭无人机袭击",
+    #     "美联储开启加息周期",
+    #     "美联储紧急降息",
+    #     "美元指数突破新高",
+    #     "全球金融危机爆发"
+    # ]
 
     # 创建输出文件夹
     output_dir = Path("output/")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 批量构建并单独保存
-    success_count = 0
-    fail_count = 0
+    event_name = "俄乌冲突爆发"
+    event = builder.auto_generate_event(event_name)
+    if event and event.get('event_id'):
+        # 生成文件名（使用 event_id）
+        filename = f"{event['event_id']}.json"
+        filepath = output_dir / filename
 
-    for event_name in events:
-        print(f"处理: {event_name}")
+        # 单独保存
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(event, f, ensure_ascii=False, indent=2)
 
-        try:
-            # 自动生成事件
-            event = builder.auto_generate_event(event_name)
+        print(f"  ✅ 已保存: {filename}")
 
-            if event and event.get('event_id'):
-                # 生成文件名（使用 event_id）
-                filename = f"{event['event_id']}.json"
-                filepath = output_dir / filename
-
-                # 单独保存
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    json.dump(event, f, ensure_ascii=False, indent=2)
-
-                print(f"  ✅ 已保存: {filename}")
-                success_count += 1
-            else:
-                print(f"  ❌ 生成失败")
-                fail_count += 1
-
-        except Exception as e:
-            print(f"  ❌ 异常: {e}")
-            fail_count += 1
-
-    print(f"\n完成！成功: {success_count}, 失败: {fail_count}")
-    print(f"文件保存在: {output_dir}")
+    # # 批量构建并单独保存
+    # success_count = 0
+    # fail_count = 0
+    #
+    # for event_name in events:
+    #     print(f"处理: {event_name}")
+    #
+    #     try:
+    #         # 自动生成事件
+    #         event = builder.auto_generate_event(event_name)
+    #
+    #         if event and event.get('event_id'):
+    #             # 生成文件名（使用 event_id）
+    #             filename = f"{event['event_id']}.json"
+    #             filepath = output_dir / filename
+    #
+    #             # 单独保存
+    #             with open(filepath, 'w', encoding='utf-8') as f:
+    #                 json.dump(event, f, ensure_ascii=False, indent=2)
+    #
+    #             print(f"  ✅ 已保存: {filename}")
+    #             success_count += 1
+    #         else:
+    #             print(f"  ❌ 生成失败")
+    #             fail_count += 1
+    #
+    #     except Exception as e:
+    #         print(f"  ❌ 异常: {e}")
+    #         fail_count += 1
+    #
+    # print(f"\n完成！成功: {success_count}, 失败: {fail_count}")
+    # print(f"文件保存在: {output_dir}")
 
 
 if __name__ == "__main__":
