@@ -1,0 +1,216 @@
+{
+  "event_id": "20220224_RUUK",
+  "event_name": "俄乌冲突爆发",
+  "event_date": "2022-02-24",
+  "event_timezone": "UTC+8",
+  "location": "乌克兰",
+  "event_type": "地缘冲突",
+  "subtype": "战争",
+  "involved_countries": [
+    "俄罗斯",
+    "乌克兰"
+  ],
+  "brief_description": "俄罗斯对乌克兰发起“特别军事行动”，标志着俄乌冲突全面爆发。",
+  "pre_event_timeline": [
+    {
+      "date": "2021-11-10",
+      "event": "美国情报部门报告称，俄罗斯在俄乌边境集结大量军队，引发入侵担忧。",
+      "source": "https://www.reuters.com/world/europe/exclusive-us-intelligence-finds-russia-planning-major-offensive-against-ukraine-2021-11-10/",
+      "source_description": "路透社报道美国情报评估"
+    },
+    {
+      "date": "2022-02-21",
+      "event": "俄罗斯总统普京签署法令，承认乌克兰东部顿涅茨克和卢甘斯克地区为独立国家。",
+      "source": "https://www.bbc.com/news/world-europe-60468237",
+      "source_description": "BBC报道俄罗斯承认乌东两地区独立"
+    },
+    {
+      "date": "2022-02-23",
+      "event": "乌克兰议会批准全国进入紧急状态，并呼吁公民离开俄罗斯。",
+      "source": "https://www.reuters.com/world/europe/ukraine-declares-state-emergency-tells-citizens-leave-russia-2022-02-23/",
+      "source_description": "路透社报道乌克兰宣布紧急状态"
+    }
+  ],
+  "post_event_timeline": [
+    {
+      "date": "2022-02-26",
+      "event": "美国、欧盟、英国和加拿大宣布将部分俄罗斯银行从SWIFT国际支付系统中移除。",
+      "source": "https://www.consilium.europa.eu/en/press/press-releases/2022/02/26/russia-s-military-aggression-against-ukraine-eu-imposes-sanctions-against-president-putin-and-foreign-minister-lavrov-and-adopts-wide-ranging-individual-and-economic-sanctions/",
+      "source_description": "欧盟理事会关于SWIFT制裁的声明"
+    },
+    {
+      "date": "2022-03-02",
+      "event": "联合国大会以压倒性多数通过决议，要求俄罗斯立即停止对乌克兰使用武力并撤军。",
+      "source": "https://press.un.org/en/2022/ga12407.doc.htm",
+      "source_description": "联合国大会决议文件"
+    },
+    {
+      "date": "2022-04-02",
+      "event": "乌克兰军队宣布收复首都基辅周边地区，俄军从基辅方向撤军。",
+      "source": "https://www.nytimes.com/2022/04/02/world/europe/ukraine-russia-withdrawal-kyiv.html",
+      "source_description": "纽约时报报道俄军从基辅地区撤退"
+    }
+  ],
+  "core_indicators": {
+    "brent_price": {
+      "name": "布伦特油价",
+      "raw_value": 99.08,
+      "unit": "美元/桶",
+      "percentile_5y": 90.4,
+      "interpretation": "高位",
+      "frequency": "D"
+    },
+    "dxy": {
+      "name": "美元指数",
+      "raw_value": 97.0908,
+      "unit": "",
+      "percentile_5y": 19.8,
+      "interpretation": "低位",
+      "frequency": "D"
+    },
+    "opec": {
+      "name": "opec",
+      "raw_value": 28079.0,
+      "unit": "",
+      "percentile_5y": 60.7,
+      "interpretation": "中位",
+      "frequency": "M"
+    },
+    "refinery_utilization": {
+      "name": "refinery_utilization",
+      "raw_value": 87.79,
+      "unit": "",
+      "percentile_5y": 24.6,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "us_crude_inventory": {
+      "name": "us_crude_inventory",
+      "raw_value": 416022.0,
+      "unit": "",
+      "percentile_5y": 11.1,
+      "interpretation": "低位",
+      "frequency": "M"
+    },
+    "vix": {
+      "name": "VIX恐慌指数",
+      "raw_value": 30.32,
+      "unit": "",
+      "percentile_5y": 95.6,
+      "interpretation": "高位",
+      "frequency": "D"
+    }
+  },
+  "price_path": {
+    "brent": {
+      "pre": {
+        "date": "2022-02-23",
+        "close": 96.84
+      },
+      "daily": [
+        {
+          "day": "t0",
+          "date": "2022-02-24",
+          "close": 99.08,
+          "return_pct": 2.31
+        },
+        {
+          "day": "t+1",
+          "date": "2022-02-25",
+          "close": 97.93,
+          "return_pct": 1.13
+        },
+        {
+          "day": "t+2",
+          "date": "2022-02-28",
+          "close": 100.99,
+          "return_pct": 4.29
+        },
+        {
+          "day": "t+3",
+          "date": "2022-03-01",
+          "close": 104.97,
+          "return_pct": 8.4
+        },
+        {
+          "day": "t+4",
+          "date": "2022-03-02",
+          "close": 112.93,
+          "return_pct": 16.62
+        },
+        {
+          "day": "t+5",
+          "date": "2022-03-03",
+          "close": 110.46,
+          "return_pct": 14.06
+        },
+        {
+          "day": "t+10",
+          "date": "2022-03-10",
+          "close": 109.33,
+          "return_pct": 12.9
+        },
+        {
+          "day": "t+20",
+          "date": "2022-03-24",
+          "close": 119.03,
+          "return_pct": 22.91
+        },
+        {
+          "day": "t+30",
+          "date": "2022-04-07",
+          "close": 100.58,
+          "return_pct": 3.86
+        },
+        {
+          "day": "t+60",
+          "date": "2022-05-20",
+          "close": 112.55,
+          "return_pct": 16.22
+        }
+      ],
+      "peak": {
+        "value": 127.98,
+        "day": 12,
+        "date": "2022-03-08",
+        "return_since_pre": 32.16
+      },
+      "trough": {
+        "value": 97.93,
+        "day": 1,
+        "date": "2022-02-25",
+        "return_since_pre": 1.13
+      },
+      "volatility_pre": 24.35,
+      "volatility_post": 73.41,
+      "pattern": "冲高回落",
+      "pattern_interpretation": "冲突爆发初期，市场恐慌情绪导致能源、粮食及部分金属价格急剧飙升；随着制裁措施落地、供应担忧部分缓解以及市场逐步消化风险，价格从高点有所回落，但整体仍维持在远高于冲突前的水平震荡。"
+    }
+  },
+  "turning_points": [
+    {
+      "day": 1,
+      "date": "2022-02-24",
+      "event": "俄罗斯发动全面军事进攻，全球市场剧烈震荡，能源和粮食价格飙升。",
+      "impact": "上涨",
+      "magnitude": "剧烈",
+      "source": "https://www.bloomberg.com/news/articles/2022-02-24/oil-soars-past-100-as-russia-attacks-ukraine-roiling-markets"
+    },
+    {
+      "day": 30,
+      "date": "2022-03-25",
+      "event": "俄军宣布第一阶段军事行动主要目标完成，将集中力量“解放”顿巴斯地区，冲突进入相持阶段。",
+      "impact": "反转",
+      "magnitude": "显著",
+      "source": "https://www.reuters.com/world/europe/russia-says-first-phase-ukraine-operation-mostly-complete-focus-now-donbass-2022-03-25/"
+    }
+  ],
+  "summary": "2022年2月24日，俄罗斯对乌克兰发动全面军事行动，引发二战以来欧洲最大规模的地缘政治危机，导致全球能源、粮食市场剧烈动荡和多国对俄实施严厉制裁。",
+  "data_sources": {
+    "indicators": "CSV files",
+    "price": "CSV files",
+    "timeline": "待填写",
+    "verified_by": "",
+    "verified_date": ""
+  }
+}

@@ -593,39 +593,62 @@ class HistoricalEventDatabaseBuilder:
 
         {f"事件日期参考：{event_date}" if event_date else "请推断事件发生的具体日期"}
 
+        【重要要求】
+        1. 每个时间线事件必须包含可信来源
+        2. 来源可以是：新闻媒体名称（如"路透社"、"新华社"）、官方声明、权威机构报告
+        3. 如果知道具体URL可以给出，不知道则给出来源名称即可
+        4. 来源要真实可查，不要编造
+
         请返回纯JSON格式，包含以下字段：
+
         {{
-            "event_id": "YYYYMMDD_事件缩写（英文）",
-            "event_name": "{event_name}",
-            "event_date": "YYYY-MM-DD",
-            "location": "事件发生地点",
-            "event_type": "地缘冲突/宏观政策/供给冲击/需求冲击",
-            "subtype": "战争/制裁/加息/减产/疫情等",
-            "involved_countries": ["国家1", "国家2"],
-            "brief_description": "一句话描述事件核心（50字以内）",
-            "pre_event_timeline": [
-                {{"date": "YYYY-MM-DD", "event": "事件发生前的关键铺垫1"}},
-                {{"date": "YYYY-MM-DD", "event": "事件发生前的关键铺垫2"}},
-                {{"date": "YYYY-MM-DD", "event": "事件发生前的关键铺垫3"}}
-            ],
-            "post_event_timeline": [
-                {{"date": "YYYY-MM-DD", "event": "事件发生后的关键发展1"}},
-                {{"date": "YYYY-MM-DD", "event": "事件发生后的关键发展2"}},
-                {{"date": "YYYY-MM-DD", "event": "事件发生后的关键发展3"}}
-            ],
-            "turning_points": [
-                {{"day": 数字, "date": "YYYY-MM-DD", "event": "转折事件描述", "impact": "上涨/下跌/反转", "magnitude": "影响幅度"}}
-            ],
-            "summary": "一句话总结该事件的核心特征、关键背景、价格路径和主要教训（100字以内）",
-            "price_pattern": "冲高回落/持续上涨/快速修复/震荡",
-            "pattern_interpretation": "价格走势特征描述"
+          "event_id": "YYYYMMDD_事件缩写",
+          "event_date": "YYYY-MM-DD",
+          "location": "事件发生地点",
+          "event_type": "地缘冲突/宏观政策/供给冲击/需求冲击",
+          "subtype": "战争/制裁/加息/减产/疫情等",
+          "involved_countries": ["国家1", "国家2"],
+          "brief_description": "一句话描述事件核心（50字以内）",
+
+          "pre_event_timeline": [
+            {{
+              "date": "YYYY-MM-DD",
+              "event": "事件描述",
+              "source": "来源名称或URL",
+              "source_description": "来源简要说明"
+            }}
+          ],
+
+          "post_event_timeline": [
+            {{
+              "date": "YYYY-MM-DD",
+              "event": "事件描述",
+              "source": "来源名称或URL",
+              "source_description": "来源简要说明"
+            }}
+          ],
+
+          "turning_points": [
+            {{
+              "day": 数字,
+              "date": "YYYY-MM-DD",
+              "event": "转折事件描述",
+              "impact": "上涨/下跌/反转",
+              "magnitude": "影响幅度",
+              "source": "来源名称或URL"
+            }}
+          ],
+
+          "summary": "一句话总结（100字以内）",
+          "price_pattern": "冲高回落/持续上涨/快速修复/震荡",
+          "pattern_interpretation": "价格走势特征描述"
         }}
 
         要求：
-        1. 日期要准确
-        2. 涉及国家要具体
-        3. 时间线要合理（至少3个铺垫和3个发展）
-        4. 只返回JSON，不要任何其他文字
+        - 时间线至少3个前序事件、3个后续事件
+        - 转折点至少2个
+        - 来源必须真实可信，不要编造
+        - 只返回JSON，不要其他内容
         """
 
         try:
